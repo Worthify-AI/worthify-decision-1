@@ -11,6 +11,7 @@ import json
 import math
 from pathlib import Path
 import random
+import xml.etree.ElementTree as ET
 
 ROOT = Path(__file__).resolve().parents[1]
 NAMES = ('raw-42', 'raw-43', 'tuned-42', 'tuned-43')
@@ -107,6 +108,77 @@ def verify_curve(curve, metric):
     threshold, label = (.8, '0_80') if metric == 'accuracy' else (.6, '0_60')
     equal(curve['first_grid_step_at_'+label+'_'+metric],
           next((s for s,v in zip(steps, values) if v >= threshold), None), 'first threshold')
+    if 'late_phase_accuracy_auc_194_to_388' in curve:
+        require(metric == 'accuracy' and 194 in steps and steps[-1] == 388,
+                'Invalid extended curve horizon')
+        start = steps.index(194)
+        late = sum((a+b)*(t-s)/2 for s,t,a,b in
+                   zip(steps[start:], steps[start+1:], values[start:], values[start+1:])) / 194
+        equal(curve['late_phase_accuracy_auc_194_to_388'], late, 'late-phase accuracy AUC')
+
+
+def verify_extended_selection(report):
+    """Recompute the frozen four-epoch grid and validation-only selection."""
+    grid = [0] + [step for step in range(1, 389) if step % 25 == 0 or step % 97 == 0]
+    rankings = {}
+    for arm in NAMES:
+        curve = report['validation_curves'][arm]
+        equal(curve['grid_steps'], grid, 'extended fixed grid')
+        verify_curve(curve, 'accuracy')
+        require('late_phase_accuracy_auc_194_to_388' in curve, 'Missing late-phase AUC')
+        points = {step: (curve['grid_accuracy'][i], curve['grid_macro_f1'][i],
+                         -curve['grid_cross_entropy'][i]) for i,step in enumerate(grid)}
+        best = max((step for step in grid if step >= 97), key=lambda step: (*points[step], -step))
+        equal(report['runs'][arm]['selected_step'], best, 'validation-selected checkpoint')
+        rankings[arm] = points[best]
+    expected = {arm: max((42,43), key=lambda seed: (*rankings[f'{arm}-{seed}'], -seed))
+                for arm in ('raw','tuned')}
+    equal(report['selected_seed_by_arm'], expected, 'validation-selected seed')
+    equal(report['faster_learning_gate'], all(
+        report['validation_curves'][f'tuned-{seed}']['baseline_adjusted_accuracy_auc'] >
+        report['validation_curves'][f'raw-{seed}']['baseline_adjusted_accuracy_auc']
+        for seed in (42,43)), 'historical baseline-adjusted gate')
+
+
+def verify_extended(root):
+    name = 'foundation-banking77-extended-lora-20260927-v1'
+    result = verify_transfer(root, name, True)
+    report_path = root/'results/worthify'/name/'report.json'
+    report = load(report_path)
+    require(report['schema'] == 'openjev-banking77-extended-evidence-v1', 'Wrong extended schema')
+    verify_extended_selection(report)
+    sensitivity = report['sensitivity_excluding_v9_exposure']
+    improvement = (report['selected_test_accuracy_delta_tuned_minus_raw'] > 0
+        and all(v > 0 for v in report['per_seed_test_accuracy_delta_tuned_minus_raw'].values())
+        and report['selected_pair_intent_bootstrap']['percentile_2_5'] > 0
+        and sensitivity['selected_pair_accuracy_delta_tuned_minus_raw'] > 0
+        and all(v > 0 for v in sensitivity['per_seed_accuracy_delta_tuned_minus_raw'].values()))
+    equal(report['task_specific_improvement_gate'], improvement, 'task improvement gate')
+    stem = root/'docs/assets/decision-1/banking77-validation-0-388-20260927-v1'
+    manifest = load(stem.with_suffix('.json'))
+    equal(manifest['public_report_sha256'], sha(report_path), 'chart report binding')
+    for kind in ('selector', 'protocol'):
+        equal(manifest[kind+'_sha256'], report['source_hashes'][kind+'_sha256'], 'chart '+kind)
+    for suffix in ('png', 'svg'):
+        equal(manifest[suffix+'_sha256'], sha(stem.with_suffix('.'+suffix)), 'chart '+suffix)
+    equal(manifest['fixed_grid_end_update'], 388, 'chart horizon')
+    equal(manifest['validation_rows'], 365, 'chart validation rows')
+    equal(manifest['adapter_seeds'], [42,43], 'chart seeds')
+    # Recompute every displayed polyline from public curves, independently of the image renderer.
+    curves = report['validation_curves']
+    minimum = math.floor((min(min(c['grid_accuracy']) for c in curves.values())-.01)*100)/100
+    maximum = math.ceil((max(max(c['grid_accuracy']) for c in curves.values())+.01)*100)/100
+    expected = []
+    for arm in ('raw','tuned'):
+        values = [curves[f'{arm}-{seed}']['grid_accuracy'] for seed in (42,43)]
+        values.append([(a+b)/2 for a,b in zip(*values)])
+        for series in values:
+            expected.append(' '.join(f'{130+1320*step/388:.1f},{165+550*(maximum-v)/(maximum-minimum):.1f}'
+                for step,v in zip(curves[f'{arm}-42']['grid_steps'],series)))
+    svg = ET.fromstring(stem.with_suffix('.svg').read_text())
+    actual = [line.attrib['points'] for line in svg.findall('{http://www.w3.org/2000/svg}polyline')]
+    equal(actual, expected, 'chart validation polylines')
+    return {**result, 'validation_updates': 388, 'chart_curves': len(actual)}
 
 
 def bootstrap(data, raw, tuned, labels):
@@ -222,6 +294,7 @@ def main(root=ROOT):
     checksums(root/'results/raw')
     result = {'status':'ok',
         'banking77':verify_transfer(root,'foundation-banking77-transfer-lora-20260926-v1',True),
+        'banking77_extended':verify_extended(root),
         'ctu13':verify_transfer(root,'foundation-transfer-lora-20260926-v1',False),
         'full_weight':verify_full_weight(root)}
     print(json.dumps(result,sort_keys=True))

@@ -57,21 +57,29 @@ once. `worthify-lora score` accepts the same decision schema without gold labels
 
 ## Does the tuned base help?
 
-In matched, two-seed LoRA studies, Decision-1 improved one task and hurt another:
+The longer BANKING77 run did not sustain the gain seen in the initial study.
+These are validation-selected adapters with two adapter seeds per base:
 
-| Task | LoRA on original Gemma | LoRA on Decision-1 |
+| Study | LoRA on original Gemma | LoRA on Decision-1 |
 |---|---:|---:|
-| BANKING77, transformed 16-option routing · accuracy | 90.42% | 91.62% |
-| CTU-13, one held-out flow scenario · macro-F1 | 0.432 | 0.115 |
+| BANKING77, 388 updates · 16-option accuracy | **93.54%** | 93.21% |
+| Earlier BANKING77, 194 updates · 16-option accuracy | 90.42% | **91.62%** |
+| CTU-13, one held-out flow scenario · macro-F1 | **0.432** | 0.115 |
 
-![Matched LoRA results](docs/assets/decision-1/matched-lora-outcomes.png)
+![BANKING77 validation through 388 updates: two adapter seeds per base and their means](docs/assets/decision-1/banking77-validation-0-388-20260927-v1.png)
 
-BANKING77 was an exploratory follow-up after CTU-13 and is close to the base's
-intent-training domain. These are validation-selected pairs, not standard
-77-way BANKING77 results. Original Gemma had higher absolute validation-accuracy
-AUC. Neither comparison establishes a general LoRA advantage or faster convergence.
-A four-epoch extension is pending; this snapshot claims only the completed
-194-update study. [Check the rows and method](docs/EVIDENCE.md).
+Under the 388-update budget, original Gemma scored higher on test in both seed pairs. The
+selected pair's tuned-minus-original difference was −0.32 percentage points,
+with a descriptive 77-intent bootstrap interval of −0.94 to +0.29 points.
+Decision-1 improved more from its lower validation baseline and performed better
+over the later validation interval; original Gemma had higher absolute
+validation-accuracy AUC over the full run. This does not establish a general
+LoRA advantage or faster convergence.
+
+BANKING77 was chosen after CTU-13, and the extension was chosen after the
+194-update result. The extension used fresh adapters; its early trajectory was
+not byte-identical to the earlier run. These are transformed 16-option results,
+not standard 77-way BANKING77 scores. [Check the rows and method](docs/EVIDENCE.md).
 
 Scores depend on the options offered and are **not calibrated confidence**.
 The interface cannot choose a missing option. Prompt length, precision and batch

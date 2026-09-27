@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="850" viewBox="0 0 1500 850" role="img" aria-label="BANKING77 validation accuracy through 388 optimizer updates">
+<metadata id="provenance">selector_sha256=bd0d8abc79bc15c9be7e4fd8a1a0a07b458fe7d1a2d57e71c643928b4af602c5;protocol_sha256=2adab7c2f2e638aec8f618b5376a65af905324f9ea7abbd2d124b51ce96075d7;grid=0..388;rows=365;seeds=42,43</metadata>
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="130" y="56" font-family="Arial,sans-serif" font-size="32" font-weight="700" fill="#182334">BANKING77 validation over 388 updates</text>
+<text x="130" y="90" font-family="Arial,sans-serif" font-size="19" fill="#334155">Fixed training grid · 16-option routing · 365 validation rows</text>
+<line x1="130" y1="660.0" x2="1450" y2="660.0" stroke="#d8e0ea" stroke-width="1"/>
+<text x="115" y="666.0" text-anchor="end" font-family="Arial,sans-serif" font-size="17" fill="#334155">88%</text>
+<line x1="130" y1="550.0" x2="1450" y2="550.0" stroke="#d8e0ea" stroke-width="1"/>
+<text x="115" y="556.0" text-anchor="end" font-family="Arial,sans-serif" font-size="17" fill="#334155">90%</text>
+<line x1="130" y1="440.0" x2="1450" y2="440.0" stroke="#d8e0ea" stroke-width="1"/>
+<text x="115" y="446.0" text-anchor="end" font-family="Arial,sans-serif" font-size="17" fill="#334155">92%</text>
+<line x1="130" y1="330.0" x2="1450" y2="330.0" stroke="#d8e0ea" stroke-width="1"/>
+<text x="115" y="336.0" text-anchor="end" font-family="Arial,sans-serif" font-size="17" fill="#334155">94%</text>
+<line x1="130" y1="220.0" x2="1450" y2="220.0" stroke="#d8e0ea" stroke-width="1"/>
+<text x="115" y="226.0" text-anchor="end" font-family="Arial,sans-serif" font-size="17" fill="#334155">96%</text>
+<line x1="130.0" y1="165" x2="130.0" y2="715" stroke="#edf1f6" stroke-width="1"/>
+<text x="130.0" y="745" text-anchor="middle" font-family="Arial,sans-serif" font-size="16" fill="#334155">0</text>
+<line x1="300.1" y1="165" x2="300.1" y2="715" stroke="#edf1f6" stroke-width="1"/>
+<text x="300.1" y="745" text-anchor="middle" font-family="Arial,sans-serif" font-size="16" fill="#334155">50</text>
+<line x1="470.2" y1="165" x2="470.2" y2="715" stroke="#edf1f6" stroke-width="1"/>
+<text x="470.2" y="745" text-anchor="middle" font-family="Arial,sans-serif" font-size="16" fill="#334155">100</text>
+<line x1="640.3" y1="165" x2="640.3" y2="715" stroke="#edf1f6" stroke-width="1"/>
+<text x="640.3" y="745" text-anchor="middle" font-family="Arial,sans-serif" font-size="16" fill="#334155">150</text>
+<line x1="790.0" y1="165" x2="790.0" y2="715" stroke="#edf1f6" stroke-width="1"/>
+<text x="790.0" y="745" text-anchor="middle" font-family="Arial,sans-serif" font-size="16" fill="#334155">194</text>
+<line x1="980.5" y1="165" x2="980.5" y2="715" stroke="#edf1f6" stroke-width="1"/>
+<text x="980.5" y="745" text-anchor="middle" font-family="Arial,sans-serif" font-size="16" fill="#334155">250</text>
+<line x1="1150.6" y1="165" x2="1150.6" y2="715" stroke="#edf1f6" stroke-width="1"/>
+<text x="1150.6" y="745" text-anchor="middle" font-family="Arial,sans-serif" font-size="16" fill="#334155">300</text>
+<line x1="1320.7" y1="165" x2="1320.7" y2="715" stroke="#edf1f6" stroke-width="1"/>
+<text x="1320.7" y="745" text-anchor="middle" font-family="Arial,sans-serif" font-size="16" fill="#334155">350</text>
+<line x1="1450.0" y1="165" x2="1450.0" y2="715" stroke="#edf1f6" stroke-width="1"/>
+<text x="1450.0" y="745" text-anchor="middle" font-family="Arial,sans-serif" font-size="16" fill="#334155">388</text>
+<line x1="790.0" y1="165" x2="790.0" y2="715" stroke="#8795a8" stroke-width="2" stroke-dasharray="7 6"/>
+<text x="802.0" y="185" font-family="Arial,sans-serif" font-size="16" fill="#526176">Earlier 2-epoch budget</text>
+<polyline points="130.0,527.4 215.1,527.4 300.1,452.1 385.2,421.9 460.0,346.6 470.2,331.5 555.3,361.6 640.3,346.6 725.4,391.8 790.0,406.8 810.4,391.8 895.5,361.6 980.5,421.9 1065.6,376.7 1120.0,331.5 1150.6,346.6 1235.7,316.4 1320.7,286.3 1405.8,301.4 1450.0,286.3" fill="none" stroke="#64748b" stroke-width="2" opacity="0.38"/>
+<polyline points="130.0,527.4 215.1,512.3 300.1,421.9 385.2,406.8 460.0,361.6 470.2,376.7 555.3,376.7 640.3,391.8 725.4,376.7 790.0,391.8 810.4,361.6 895.5,361.6 980.5,421.9 1065.6,331.5 1120.0,316.4 1150.6,301.4 1235.7,361.6 1320.7,316.4 1405.8,361.6 1450.0,301.4" fill="none" stroke="#64748b" stroke-width="2" opacity="0.38"/>
+<polyline points="130.0,527.4 215.1,519.9 300.1,437.0 385.2,414.4 460.0,354.1 470.2,354.1 555.3,369.2 640.3,369.2 725.4,384.2 790.0,399.3 810.4,376.7 895.5,361.6 980.5,421.9 1065.6,354.1 1120.0,324.0 1150.6,324.0 1235.7,339.0 1320.7,301.4 1405.8,331.5 1450.0,293.8" fill="none" stroke="#64748b" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="130.0" cy="527.4" r="3.5" fill="#64748b"/>
+<circle cx="215.1" cy="519.9" r="3.5" fill="#64748b"/>
+<circle cx="300.1" cy="437.0" r="3.5" fill="#64748b"/>
+<circle cx="385.2" cy="414.4" r="3.5" fill="#64748b"/>
+<circle cx="460.0" cy="354.1" r="3.5" fill="#64748b"/>
+<circle cx="470.2" cy="354.1" r="3.5" fill="#64748b"/>
+<circle cx="555.3" cy="369.2" r="3.5" fill="#64748b"/>
+<circle cx="640.3" cy="369.2" r="3.5" fill="#64748b"/>
+<circle cx="725.4" cy="384.2" r="3.5" fill="#64748b"/>
+<circle cx="790.0" cy="399.3" r="3.5" fill="#64748b"/>
+<circle cx="810.4" cy="376.7" r="3.5" fill="#64748b"/>
+<circle cx="895.5" cy="361.6" r="3.5" fill="#64748b"/>
+<circle cx="980.5" cy="421.9" r="3.5" fill="#64748b"/>
+<circle cx="1065.6" cy="354.1" r="3.5" fill="#64748b"/>
+<circle cx="1120.0" cy="324.0" r="3.5" fill="#64748b"/>
+<circle cx="1150.6" cy="324.0" r="3.5" fill="#64748b"/>
+<circle cx="1235.7" cy="339.0" r="3.5" fill="#64748b"/>
+<circle cx="1320.7" cy="301.4" r="3.5" fill="#64748b"/>
+<circle cx="1405.8" cy="331.5" r="3.5" fill="#64748b"/>
+<circle cx="1450.0" cy="293.8" r="3.5" fill="#64748b"/>
+<polyline points="130.0,647.9 215.1,632.9 300.1,602.7 385.2,542.5 460.0,542.5 470.2,527.4 555.3,421.9 640.3,421.9 725.4,361.6 790.0,376.7 810.4,406.8 895.5,316.4 980.5,271.2 1065.6,286.3 1120.0,316.4 1150.6,286.3 1235.7,256.2 1320.7,301.4 1405.8,271.2 1450.0,256.2" fill="none" stroke="#d64a37" stroke-width="2" opacity="0.38"/>
+<polyline points="130.0,647.9 215.1,632.9 300.1,587.7 385.2,542.5 460.0,482.2 470.2,452.1 555.3,437.0 640.3,437.0 725.4,376.7 790.0,361.6 810.4,331.5 895.5,316.4 980.5,271.2 1065.6,346.6 1120.0,301.4 1150.6,301.4 1235.7,331.5 1320.7,286.3 1405.8,316.4 1450.0,316.4" fill="none" stroke="#d64a37" stroke-width="2" opacity="0.38"/>
+<polyline points="130.0,647.9 215.1,632.9 300.1,595.2 385.2,542.5 460.0,512.3 470.2,489.7 555.3,429.5 640.3,429.5 725.4,369.2 790.0,369.2 810.4,369.2 895.5,316.4 980.5,271.2 1065.6,316.4 1120.0,308.9 1150.6,293.8 1235.7,293.8 1320.7,293.8 1405.8,293.8 1450.0,286.3" fill="none" stroke="#d64a37" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="130.0" cy="647.9" r="3.5" fill="#d64a37"/>
+<circle cx="215.1" cy="632.9" r="3.5" fill="#d64a37"/>
+<circle cx="300.1" cy="595.2" r="3.5" fill="#d64a37"/>
+<circle cx="385.2" cy="542.5" r="3.5" fill="#d64a37"/>
+<circle cx="460.0" cy="512.3" r="3.5" fill="#d64a37"/>
+<circle cx="470.2" cy="489.7" r="3.5" fill="#d64a37"/>
+<circle cx="555.3" cy="429.5" r="3.5" fill="#d64a37"/>
+<circle cx="640.3" cy="429.5" r="3.5" fill="#d64a37"/>
+<circle cx="725.4" cy="369.2" r="3.5" fill="#d64a37"/>
+<circle cx="790.0" cy="369.2" r="3.5" fill="#d64a37"/>
+<circle cx="810.4" cy="369.2" r="3.5" fill="#d64a37"/>
+<circle cx="895.5" cy="316.4" r="3.5" fill="#d64a37"/>
+<circle cx="980.5" cy="271.2" r="3.5" fill="#d64a37"/>
+<circle cx="1065.6" cy="316.4" r="3.5" fill="#d64a37"/>
+<circle cx="1120.0" cy="308.9" r="3.5" fill="#d64a37"/>
+<circle cx="1150.6" cy="293.8" r="3.5" fill="#d64a37"/>
+<circle cx="1235.7" cy="293.8" r="3.5" fill="#d64a37"/>
+<circle cx="1320.7" cy="293.8" r="3.5" fill="#d64a37"/>
+<circle cx="1405.8" cy="293.8" r="3.5" fill="#d64a37"/>
+<circle cx="1450.0" cy="286.3" r="3.5" fill="#d64a37"/>
+<text x="750.0" y="775" text-anchor="middle" font-family="Arial,sans-serif" font-size="19" fill="#182334">Optimizer updates</text>
+<text x="35" y="440.0" transform="rotate(-90 35 440.0)" text-anchor="middle" font-family="Arial,sans-serif" font-size="19" fill="#182334">Validation accuracy</text>
+<line x1="685" y1="119" x2="733" y2="119" stroke="#64748b" stroke-width="5"/>
+<text x="745" y="125" font-family="Arial,sans-serif" font-size="18" fill="#182334">Original Gemma</text>
+<line x1="1025" y1="119" x2="1073" y2="119" stroke="#d64a37" stroke-width="5"/>
+<text x="1085" y="125" font-family="Arial,sans-serif" font-size="18" fill="#182334">Decision-1 preview</text>
+<text x="130" y="820" font-family="Arial,sans-serif" font-size="17" fill="#526176">Thin lines: adapter seeds 42 and 43. Bold lines: their mean at each fixed check.</text>
+</svg>

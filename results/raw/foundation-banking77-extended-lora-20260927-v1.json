@@ -1,0 +1,92 @@
+{
+  "data_manifest_sha256": "b9e434686de8ad0670bb3ca5223df78cee39af9697d09e1b068ed3ae114f714b",
+  "epochs": 4,
+  "evidence_package": "results/worthify/foundation-banking77-extended-lora-20260927-v1",
+  "faster_learning_gate": true,
+  "fixed_budget_validation_accuracy": {
+    "raw-42": 0.947945205479452,
+    "raw-43": 0.9452054794520548,
+    "tuned-42": 0.9534246575342465,
+    "tuned-43": 0.9424657534246575
+  },
+  "late_phase_validation_accuracy_auc_194_to_388": {
+    "raw-42": 0.936929812173422,
+    "raw-43": 0.9362448806665725,
+    "tuned-42": 0.9460386950995622,
+    "tuned-43": 0.9433695805677165
+  },
+  "limitations": "Exploratory task chosen after a negative CTU-13 result; 16-option routing, not standard 77-way accuracy; lexical decontamination does not prove semantic novelty.",
+  "paired_rows_sha256": "88c71f6ff9f3d998a53b5d9c9d24cc8a1aff927530437b7d52d2e085321fdc1a",
+  "protocol_sha256": "2adab7c2f2e638aec8f618b5376a65af905324f9ea7abbd2d124b51ce96075d7",
+  "report_sha256": "f6e3032fa429e51cff84c13e3688d87634ab7a6d0a14cb770fcaaa6024e7d0c4",
+  "run_test_accuracy": {
+    "raw-42": 0.9353896103896104,
+    "raw-43": 0.9376623376623376,
+    "tuned-42": 0.9321428571428572,
+    "tuned-43": 0.9266233766233766
+  },
+  "schema": "openjev-banking77-extended-evidence-v1-aggregate",
+  "selected_checkpoint_steps": {
+    "raw-42": 350,
+    "raw-43": 388,
+    "tuned-42": 325,
+    "tuned-43": 250
+  },
+  "selected_pair_correctness": {
+    "both_correct": 2821,
+    "both_wrong": 149,
+    "raw_only_correct": 60,
+    "tuned_only_correct": 50
+  },
+  "selected_pair_intent_bootstrap": {
+    "groups": 77,
+    "percentile_2_5": -0.009415584415584415,
+    "percentile_97_5": 0.002922077922077922,
+    "replicates": 10000,
+    "seed": 20260926,
+    "unit": "original intent cluster"
+  },
+  "selected_seed_by_arm": {
+    "raw": 42,
+    "tuned": 42
+  },
+  "selected_test_accuracy_delta_tuned_minus_raw": -0.0032467532467532756,
+  "sensitivity_excluding_v9_exposure": {
+    "per_seed_accuracy_delta_tuned_minus_raw": {
+      "42": -0.003604193971166514,
+      "43": -0.011467889908256867
+    },
+    "per_seed_correctness": {
+      "42": {
+        "both_correct": 2795,
+        "both_wrong": 148,
+        "raw_only_correct": 60,
+        "tuned_only_correct": 49
+      },
+      "43": {
+        "both_correct": 2781,
+        "both_wrong": 144,
+        "raw_only_correct": 81,
+        "tuned_only_correct": 46
+      }
+    },
+    "rows": 3052,
+    "run_accuracy": {
+      "raw-42": 0.9354521625163827,
+      "raw-43": 0.937745740498034,
+      "tuned-42": 0.9318479685452162,
+      "tuned-43": 0.9262778505897772
+    },
+    "selected_pair_accuracy_delta_tuned_minus_raw": -0.003604193971166514,
+    "selected_pair_correctness": {
+      "both_correct": 2795,
+      "both_wrong": 148,
+      "raw_only_correct": 60,
+      "tuned_only_correct": 49
+    }
+  },
+  "task_specific_improvement_gate": false,
+  "test_rows": 3080,
+  "test_sha256": "c8ad8834a98d817198459404f874a71b9ec8848b94217448fc3a045380fe1686",
+  "training_budget_updates": 388
+}

@@ -1,12 +1,13 @@
 # Evidence and method
 
-The model card reports a single full-weight seed and two matched task-LoRA
-studies. These files contain prediction IDs, labels and scores; they do not
+The model card reports a single full-weight seed and matched LoRA studies on
+two tasks, including a longer BANKING77 follow-up. These files contain prediction IDs, labels and scores; they do not
 contain publisher utterances, prompts, source records or model weights.
 
 | Evidence | What it establishes |
 |---|---|
-| [BANKING77 rows and report](../results/worthify/foundation-banking77-transfer-lora-20260926-v1/) | Four fresh adapters; seeds 42/43 on each base; 3,080 transformed official-test rows. |
+| [Earlier BANKING77 rows and report](../results/worthify/foundation-banking77-transfer-lora-20260926-v1/) | Four fresh adapters; seeds 42/43 on each base; 3,080 transformed official-test rows. |
+| [Extended BANKING77 rows and report](../results/worthify/foundation-banking77-extended-lora-20260927-v1/) | Four fresh adapters; 388 updates each; the same 3,080 transformed official-test rows. |
 | [CTU-13 rows and report](../results/worthify/foundation-transfer-lora-20260926-v1/) | Four fresh adapters on one separate capture scenario, 407 dependent test rows. |
 | [Full-weight held-out predictions](../results/worthify/full-weight-seed42-heldout-20260924/) | Frozen base, earlier task LoRA and full-weight preview on the same 3,200 rows. |
 
@@ -17,14 +18,28 @@ budget and seed-matched initial LoRA tensors. Rank-16 q/k/v/o adapters use NF4
 base weights, BF16 computation and an FP32 final-softcap option loss. Each arm
 selected its checkpoint and seed on validation before scoring test.
 
-BANKING77 used 1,540 training rows, 365 validation rows, two epochs and 194
-updates. Validation was recorded at step zero, every 25 updates and epoch ends.
+BANKING77 used 1,540 training rows and 365 validation rows. The original
+comparison ran two epochs and 194 updates; the fresh extension ran four epochs
+and 388 updates. Both validate at step zero, every 25 updates and epoch ends.
 Every test menu contains the answer and 15 distractors from 77 intents. The
-77-intent cluster bootstrap uses 10,000 resamples with seed 20260926. Of 3,080
-rows, 28 have known lexical exposure to the full-weight v9 data. Excluding them
-reduces the selected-pair gain from 1.20 to 1.11 percentage points. Full-weight
-training already included related intent-routing data. Task choice and this
-exposure limit generalization claims.
+77-intent cluster bootstrap uses 10,000 resamples with seed 20260926.
+
+The earlier selected pair gained 1.20 percentage points with Decision-1. In
+the longer run, original Gemma scored 93.54% and Decision-1 scored 93.21%, a
+−0.32-point difference with interval −0.94 to +0.29. Both extended seed pairs
+favored original Gemma on test. Excluding the same 28 rows with known lexical
+overlap with full-weight train, validation or test left −0.36 points on
+3,052 rows. Full-weight training already included related intent-routing data.
+
+The extension was chosen after viewing the earlier result, which itself
+followed CTU-13. The adapters were restarted because optimizer/RNG state was
+not saved. The new trajectory is not byte-identical to the old run from update
+97 onward. The [extended method and results](FOUNDATION_BANKING77_EXTENDED_LORA_RESULTS.md)
+record this limitation, selection steps and paired outcomes. Original Gemma
+has higher absolute validation-accuracy area over 0–388; Decision-1 has higher
+baseline-adjusted and 194–388 area. Neither establishes faster convergence.
+The reports' historical `faster_learning_gate` field refers only to the
+baseline-adjusted area.
 
 CTU-13 uses source-host labels and whole capture scenarios, not a representative
 sample of current network traffic. Its selected-pair macro-F1 regression is
@@ -56,14 +71,18 @@ python benchmarks/render_decision_1_charts.py
 
 The CPU verifier checks evidence hashes, predictions, all task-adapter accuracy
 and macro-F1 values, paired correctness, BANKING77 exposure sensitivity and
-intent bootstrap, validation curve summaries, and all 21 full-weight family
+intent bootstrap, validation curve summaries, extended checkpoint/seed selection,
+extended chart polylines, and all 21 full-weight family
 headline scores. Full-weight bootstrap intervals, runtime measurements and
 underlying source-data lineage are preserved as hashed recorded evidence; this
 verifier does not independently reproduce training or those measurements.
 The upstream 69-claim verifier is retained separately and is not evidence of
 Decision-1 quality. Hashes establish integrity, not measurement correctness.
 
-The longer BANKING77 comparison is pending. To add it, create a new text-free
-evidence directory and aggregate, bind their hashes, add a verifier case and
-negative tests, and update the card/chart/method together. Preserve the original
-194-update result. Do not treat a late curve crossing as faster convergence.
+The original and extended studies have separate evidence directories and raw
+aggregates. Their prediction rows are retained unchanged. The extended SVG/PNG
+are bound to the public report by a chart manifest; the verifier recomputes all
+six displayed SVG curves from the recorded validation values. PNG rasterization
+was separately checked with CairoSVG 2.9.0 during source staging. To add another
+study, use a new directory and update evidence, method, verifier and claims
+together. A late curve crossing alone does not establish faster convergence.

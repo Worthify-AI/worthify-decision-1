@@ -1,0 +1,16 @@
+{
+  "adapter_seeds": [
+    42,
+    43
+  ],
+  "fixed_grid_end_update": 388,
+  "plot_source_sha256": "c97c769b48b12b6555cf9c58c183dc27d012f437a63807da26f6c968356a3638",
+  "png_sha256": "10134b373f36c7e2cd5a15525f743e0823424d2c0299ee6e411891066b094417",
+  "protocol_sha256": "2adab7c2f2e638aec8f618b5376a65af905324f9ea7abbd2d124b51ce96075d7",
+  "public_report_sha256": "f6e3032fa429e51cff84c13e3688d87634ab7a6d0a14cb770fcaaa6024e7d0c4",
+  "renderer": "CairoSVG 2.9.0",
+  "schema": "openjev-banking77-extended-validation-chart-v1",
+  "selector_sha256": "bd0d8abc79bc15c9be7e4fd8a1a0a07b458fe7d1a2d57e71c643928b4af602c5",
+  "svg_sha256": "75180eb1d093ac008ac556fe65f981b867b0c21fce8d3e8666862435355ca4fe",
+  "validation_rows": 365
+}

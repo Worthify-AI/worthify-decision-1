@@ -4,300 +4,420 @@
       "relationship": "unchanged",
       "source_git_blob": "ca562883550941229de6555a8374fe2c83a18e08",
       "source_path": "LICENSE",
+      "source_revision": "f95abfd80e842ef1b045cac2a15c389f7a4b4112",
       "source_sha256": "f765f2140f8507a8f0d81ec0fd2c4bd72fe6a066841ef27883ff876a76bf61be"
     },
     "LICENSES/Apache-2.0.txt": {
       "relationship": "unchanged",
       "source_git_blob": "09065b43cb7ed2a17ccdc120f1233f85b37a682f",
       "source_path": "LICENSES/Apache-2.0.txt",
+      "source_revision": "f95abfd80e842ef1b045cac2a15c389f7a4b4112",
       "source_sha256": "0d3ae2fb460d5ffb9ae6f63a25c7cc8bf5d41eb3b79c3685873435e37ec0b659"
     },
     "MODEL_CARD.md": {
       "relationship": "adapted for curated distribution",
       "source_git_blob": "423d4e0b09c2251514951fd4fbb883d05f7e230b",
       "source_path": "docs/model-card-v2-hf-review.md",
+      "source_revision": "f95abfd80e842ef1b045cac2a15c389f7a4b4112",
       "source_sha256": "fb75bd2c80ba0bf2859cd77f04a874987c9a6c27d55354b0975aee55a848feac"
     },
     "THIRD_PARTY_WORTHIFY.md": {
       "relationship": "adapted for curated distribution",
       "source_git_blob": "5ce1128815eb0c45c353334f6843597117ba6d6e",
       "source_path": "THIRD_PARTY_WORTHIFY.md",
+      "source_revision": "f95abfd80e842ef1b045cac2a15c389f7a4b4112",
       "source_sha256": "1d3d00acf648d380c613b472b04c2d897ea9fce1b773639abb130bede7ae916d"
     },
     "benchmarks/render_decision_1_charts.py": {
       "relationship": "unchanged",
       "source_git_blob": "b40883890f44f8ea00f6cd8f956525e5deb3a1e9",
       "source_path": "benchmarks/render_decision_1_charts.py",
+      "source_revision": "f95abfd80e842ef1b045cac2a15c389f7a4b4112",
       "source_sha256": "52a955743c6c34364fe70337bcd346974fe8798e8c33686020910ecb3b3e9fb4"
     },
     "benchmarks/verify_published.py": {
       "relationship": "unchanged",
       "source_git_blob": "4cafc1d2634c92486916797915d7cf1d3640ff58",
       "source_path": "benchmarks/verify_published.py",
+      "source_revision": "f95abfd80e842ef1b045cac2a15c389f7a4b4112",
       "source_sha256": "b6d9681235db3468e929ee4f19cc2631fe0476140e5704bdf38b48498075f6d9"
+    },
+    "docs/FOUNDATION_BANKING77_EXTENDED_LORA.md": {
+      "relationship": "unchanged",
+      "source_git_blob": "18995abcf8da099222cd8b442de069faebb7872c",
+      "source_path": "docs/FOUNDATION_BANKING77_EXTENDED_LORA.md",
+      "source_revision": "17902679141a4dabb025e6431697f9eff0ec7018",
+      "source_sha256": "2adab7c2f2e638aec8f618b5376a65af905324f9ea7abbd2d124b51ce96075d7"
+    },
+    "docs/FOUNDATION_BANKING77_EXTENDED_LORA_RESULTS.md": {
+      "relationship": "unchanged",
+      "source_git_blob": "0cd7839f1ccc34dd22f215bf6637ed449da46cc4",
+      "source_path": "docs/FOUNDATION_BANKING77_EXTENDED_LORA_RESULTS.md",
+      "source_revision": "17902679141a4dabb025e6431697f9eff0ec7018",
+      "source_sha256": "e5d4d841d6e3f0241ffef13784ba896faa3a8a2a23e058659889eea291d96e02"
+    },
+    "docs/FOUNDATION_BANKING77_TRANSFER_EVAL.md": {
+      "relationship": "unchanged",
+      "source_git_blob": "ce96e6654bda536aa3a7fa5b57ecdbae5367a7dd",
+      "source_path": "docs/FOUNDATION_BANKING77_TRANSFER_EVAL.md",
+      "source_revision": "17902679141a4dabb025e6431697f9eff0ec7018",
+      "source_sha256": "10ed4ce120def3901b2256d2b90df75e86de7f1855f53f403b511fda86b7f14c"
     },
     "docs/PUBLIC_TASK_LORA.md": {
       "relationship": "adapted for curated distribution",
       "source_git_blob": "5ef760b9f1f7511b6020e7cf915a8cbc037585c3",
       "source_path": "docs/PUBLIC_TASK_LORA.md",
+      "source_revision": "f95abfd80e842ef1b045cac2a15c389f7a4b4112",
       "source_sha256": "9f231f9356ef12fe03a6c8e70355469d65455b3b8a42e343d8c4382fb4327178"
+    },
+    "docs/assets/decision-1/banking77-validation-0-388-20260927-v1.json": {
+      "relationship": "unchanged",
+      "source_git_blob": "4d6b668c45db4f75841c0d4ba5efea3b58993d5d",
+      "source_path": "docs/assets/decision-1/banking77-validation-0-388-20260927-v1.json",
+      "source_revision": "17902679141a4dabb025e6431697f9eff0ec7018",
+      "source_sha256": "a469a1f01092567fe34f8193df3fd18e1163bf0734e2956d0148fda8bd274f19"
+    },
+    "docs/assets/decision-1/banking77-validation-0-388-20260927-v1.png": {
+      "relationship": "unchanged",
+      "source_git_blob": "3ffe3d1874b27e7d7f0356e6a63fe750e83f6df1",
+      "source_path": "docs/assets/decision-1/banking77-validation-0-388-20260927-v1.png",
+      "source_revision": "17902679141a4dabb025e6431697f9eff0ec7018",
+      "source_sha256": "10134b373f36c7e2cd5a15525f743e0823424d2c0299ee6e411891066b094417"
+    },
+    "docs/assets/decision-1/banking77-validation-0-388-20260927-v1.svg": {
+      "relationship": "unchanged",
+      "source_git_blob": "ac1ce7a95ae362e13d6772de91e903d90e5208f0",
+      "source_path": "docs/assets/decision-1/banking77-validation-0-388-20260927-v1.svg",
+      "source_revision": "17902679141a4dabb025e6431697f9eff0ec7018",
+      "source_sha256": "75180eb1d093ac008ac556fe65f981b867b0c21fce8d3e8666862435355ca4fe"
     },
     "docs/assets/decision-1/banking77-validation-curve.png": {
       "relationship": "unchanged",
       "source_git_blob": "25aca199c6b191c49e0d96e64b357d9952e27757",
       "source_path": "docs/assets/decision-1/banking77-validation-curve.png",
+      "source_revision": "f95abfd80e842ef1b045cac2a15c389f7a4b4112",
       "source_sha256": "605b8c102132ea19cecbe9098404a843e96af8e4c249d2286f73e0e6c68311d7"
     },
     "docs/assets/decision-1/matched-lora-outcomes.png": {
       "relationship": "unchanged",
       "source_git_blob": "4e96638b2e9a23175a37835ae2a48a704b2431e4",
       "source_path": "docs/assets/decision-1/matched-lora-outcomes.png",
+      "source_revision": "f95abfd80e842ef1b045cac2a15c389f7a4b4112",
       "source_sha256": "d3b8436f034fd240bf2691d00aa478223bc0dd62b6d8e4c294f00f0459cf7599"
     },
     "docs/assets/decision-1/seed42-heldout-families.png": {
       "relationship": "unchanged",
       "source_git_blob": "1e09f0bdf397c21b67f464396cb764ed71b3b691",
       "source_path": "docs/assets/decision-1/seed42-heldout-families.png",
+      "source_revision": "f95abfd80e842ef1b045cac2a15c389f7a4b4112",
       "source_sha256": "89352b80c15b3c5bf0372dc3197916f1e981496588d61206e7c91873712aea64"
     },
     "pyproject.toml": {
       "relationship": "adapted for curated distribution",
       "source_git_blob": "85ed2596f315e653a117ab06d79d40c324019f16",
       "source_path": "pyproject.toml",
+      "source_revision": "f95abfd80e842ef1b045cac2a15c389f7a4b4112",
       "source_sha256": "f0fdea268661a1f8d4d461c70561613aafee53891bb1f0f904feeabbd33a21d8"
     },
     "results/phase1-summary.json": {
       "relationship": "unchanged",
       "source_git_blob": "b93ccd1bd6d30606bc3e6ae4685b53116832f845",
       "source_path": "results/phase1-summary.json",
+      "source_revision": "f95abfd80e842ef1b045cac2a15c389f7a4b4112",
       "source_sha256": "fb39e7f8113d495972b92c8d924e78e511e83414550f405aab681a376df5d1bf"
     },
     "results/raw/decision-vs-compact-array.json": {
       "relationship": "unchanged",
       "source_git_blob": "70ac7452e82ef7a6fab4a0516403b49eb09949ae",
       "source_path": "results/raw/decision-vs-compact-array.json",
+      "source_revision": "f95abfd80e842ef1b045cac2a15c389f7a4b4112",
       "source_sha256": "dc101b9dde67516c50f1645b6256eb1c189b2c213988d1fc2e6684069a8157da"
+    },
+    "results/raw/foundation-banking77-extended-lora-20260927-v1.json": {
+      "relationship": "unchanged",
+      "source_git_blob": "5598ed3362482c5cb7f95225e1f1f341cd632b7a",
+      "source_path": "results/raw/foundation-banking77-extended-lora-20260927-v1.json",
+      "source_revision": "17902679141a4dabb025e6431697f9eff0ec7018",
+      "source_sha256": "2965b7f67ab5de1518731fb1ea2be5a01a823f68d6f231c328b006767d025f30"
     },
     "results/raw/foundation-banking77-transfer-lora-20260926-v1.json": {
       "relationship": "unchanged",
       "source_git_blob": "acacf52f587fe3fbace2a21386fd5d0a04cb1ab6",
       "source_path": "results/raw/foundation-banking77-transfer-lora-20260926-v1.json",
+      "source_revision": "f95abfd80e842ef1b045cac2a15c389f7a4b4112",
       "source_sha256": "d306fff34a2cfc46a50dbd32d29d520f151c79f5bd2586315017049b26f36415"
     },
     "results/raw/foundation-transfer-lora-20260926-v1.json": {
       "relationship": "unchanged",
       "source_git_blob": "c98acd10d5b96788bbcf2274016772d42ec1170b",
       "source_path": "results/raw/foundation-transfer-lora-20260926-v1.json",
+      "source_revision": "f95abfd80e842ef1b045cac2a15c389f7a4b4112",
       "source_sha256": "7c9c610758dd9277c03087785a599e294adcb982504212d93a9bbb988116a37f"
     },
     "results/raw/full-weight-seed42-heldout-20260924.json": {
       "relationship": "unchanged",
       "source_git_blob": "606718c376ca5453ab238129073311e9d143f30b",
       "source_path": "results/raw/full-weight-seed42-heldout-20260924.json",
+      "source_revision": "f95abfd80e842ef1b045cac2a15c389f7a4b4112",
       "source_sha256": "c31016478dc49c5b9d295f0f243faf1803de3d0d48f027ad767c07bb91c018df"
     },
     "results/raw/perturbation-comparison.json": {
       "relationship": "unchanged",
       "source_git_blob": "f6afeae402291a17733e05c3a112d47d880d8e7b",
       "source_path": "results/raw/perturbation-comparison.json",
+      "source_revision": "f95abfd80e842ef1b045cac2a15c389f7a4b4112",
       "source_sha256": "f54551b1b84b207283af6ed45152a61e75ce2fb7c24689a6a4be7d72cc273d54"
     },
     "results/raw/quality-comparison.json": {
       "relationship": "unchanged",
       "source_git_blob": "67e6f9cbd1d71fe3ce1361c13858a4bbfdd2c89c",
       "source_path": "results/raw/quality-comparison.json",
+      "source_revision": "f95abfd80e842ef1b045cac2a15c389f7a4b4112",
       "source_sha256": "91b8b0138808ee9c0be63e61ca78426c99f431233ffa1d5c1b00f019aeba2a95"
     },
     "results/raw/shape777-direct.json": {
       "relationship": "unchanged",
       "source_git_blob": "e23f58df6b6f49f968560065543cb841a42f7519",
       "source_path": "results/raw/shape777-direct.json",
+      "source_revision": "f95abfd80e842ef1b045cac2a15c389f7a4b4112",
       "source_sha256": "6266ae7587409b85c406ae0fa864d5890df0f60c5026ba024a01be804dbd83e3"
     },
     "results/raw/shape777-reranker.json": {
       "relationship": "unchanged",
       "source_git_blob": "44c844358e0c6dd4d55e6338cc4623b2f4446614",
       "source_path": "results/raw/shape777-reranker.json",
+      "source_revision": "f95abfd80e842ef1b045cac2a15c389f7a4b4112",
       "source_sha256": "b667b2221858f48c1075ca981c0d505db564628babb8a07b1fc5013730adc473"
     },
     "results/raw/shape777-reranker.predictions.jsonl": {
       "relationship": "unchanged",
       "source_git_blob": "bf167dcd869f4dd25d1c3c072feef6ecd90a15ed",
       "source_path": "results/raw/shape777-reranker.predictions.jsonl",
+      "source_revision": "f95abfd80e842ef1b045cac2a15c389f7a4b4112",
       "source_sha256": "ca90b920aa19b4a83da699368e0c1fd6b61515fca30a25f05d174e48bb1365d1"
+    },
+    "results/worthify/foundation-banking77-extended-lora-20260927-v1/SHA256SUMS": {
+      "relationship": "unchanged",
+      "source_git_blob": "5ecc5d00d99ed612184bc5a28496649b0f86beba",
+      "source_path": "results/worthify/foundation-banking77-extended-lora-20260927-v1/SHA256SUMS",
+      "source_revision": "17902679141a4dabb025e6431697f9eff0ec7018",
+      "source_sha256": "3c6bc5cdd1cf05f4f84283e12236b349375589f95c6db0c113cdce48fe665c45"
+    },
+    "results/worthify/foundation-banking77-extended-lora-20260927-v1/paired-rows.jsonl": {
+      "relationship": "unchanged",
+      "source_git_blob": "00ee64252304a3267b01282f8be82c635623b5d1",
+      "source_path": "results/worthify/foundation-banking77-extended-lora-20260927-v1/paired-rows.jsonl",
+      "source_revision": "17902679141a4dabb025e6431697f9eff0ec7018",
+      "source_sha256": "88c71f6ff9f3d998a53b5d9c9d24cc8a1aff927530437b7d52d2e085321fdc1a"
+    },
+    "results/worthify/foundation-banking77-extended-lora-20260927-v1/report.json": {
+      "relationship": "unchanged",
+      "source_git_blob": "f7c8c6e976dcd81cce10099e748a4e128248181a",
+      "source_path": "results/worthify/foundation-banking77-extended-lora-20260927-v1/report.json",
+      "source_revision": "17902679141a4dabb025e6431697f9eff0ec7018",
+      "source_sha256": "f6e3032fa429e51cff84c13e3688d87634ab7a6d0a14cb770fcaaa6024e7d0c4"
     },
     "results/worthify/foundation-banking77-transfer-lora-20260926-v1/SHA256SUMS": {
       "relationship": "unchanged",
       "source_git_blob": "d3b19162ef23d0bce34380c2c006556cbd3a264b",
       "source_path": "results/worthify/foundation-banking77-transfer-lora-20260926-v1/SHA256SUMS",
+      "source_revision": "f95abfd80e842ef1b045cac2a15c389f7a4b4112",
       "source_sha256": "062c06132e5112030b7d5e0bb82289eee81717295e91e0463079f20a96dfe7c8"
     },
     "results/worthify/foundation-banking77-transfer-lora-20260926-v1/paired-rows.jsonl": {
       "relationship": "unchanged",
       "source_git_blob": "310b31616c546283cdd3197043c84d19bcf5f15d",
       "source_path": "results/worthify/foundation-banking77-transfer-lora-20260926-v1/paired-rows.jsonl",
+      "source_revision": "f95abfd80e842ef1b045cac2a15c389f7a4b4112",
       "source_sha256": "e84cb53b1989e1ea024f6c9dc87656a089fc37bddb59b76633b153193f617f6d"
     },
     "results/worthify/foundation-banking77-transfer-lora-20260926-v1/report.json": {
       "relationship": "unchanged",
       "source_git_blob": "23ee7efd9041a9e4c22711fd9aaa625bc92d85e3",
       "source_path": "results/worthify/foundation-banking77-transfer-lora-20260926-v1/report.json",
+      "source_revision": "f95abfd80e842ef1b045cac2a15c389f7a4b4112",
       "source_sha256": "6df2a7de69c6cdbb0808d998153543770350d35fb6519ad17b0dbcad5bbb95fe"
     },
     "results/worthify/foundation-transfer-lora-20260926-v1/SHA256SUMS": {
       "relationship": "unchanged",
       "source_git_blob": "1e3213dc55116ac6bae1ec1acd2f61a6bc1944cf",
       "source_path": "results/worthify/foundation-transfer-lora-20260926-v1/SHA256SUMS",
+      "source_revision": "f95abfd80e842ef1b045cac2a15c389f7a4b4112",
       "source_sha256": "a1c7a773d598e21bcb7a8bf3f7435b90cf4f2ef0f0f27db93c21fe96d93e15d5"
     },
     "results/worthify/foundation-transfer-lora-20260926-v1/paired-rows.jsonl": {
       "relationship": "unchanged",
       "source_git_blob": "ba75a08beaa196f13f442bac95a040d4f386d17b",
       "source_path": "results/worthify/foundation-transfer-lora-20260926-v1/paired-rows.jsonl",
+      "source_revision": "f95abfd80e842ef1b045cac2a15c389f7a4b4112",
       "source_sha256": "5fa2f0c1e78bd4e4d331cb2fc4cc3ee4c76a61635fbe200fe6237ffd23ab4de4"
     },
     "results/worthify/foundation-transfer-lora-20260926-v1/report.json": {
       "relationship": "unchanged",
       "source_git_blob": "b03d719403ddfeff1b5948cac6831f42dc30f15e",
       "source_path": "results/worthify/foundation-transfer-lora-20260926-v1/report.json",
+      "source_revision": "f95abfd80e842ef1b045cac2a15c389f7a4b4112",
       "source_sha256": "73408a7bc1cdd7acce73f7c61adc866933436b8db9f275a4f1006387de378f05"
     },
     "results/worthify/full-weight-seed42-heldout-20260924/comparison.json": {
       "relationship": "unchanged",
       "source_git_blob": "749eb51895673afb7cf5b6e2e7198e41829bf00c",
       "source_path": "results/worthify/full-weight-seed42-heldout-20260924/comparison.json",
+      "source_revision": "f95abfd80e842ef1b045cac2a15c389f7a4b4112",
       "source_sha256": "f8229fb201d5946b18cf1c7fa3c191660f5668ed36a89551096efe4ab9988030"
     },
     "results/worthify/full-weight-seed42-heldout-20260924/frozen/batching-audit.jsonl": {
       "relationship": "unchanged",
       "source_git_blob": "ba94ef1e1ead16273f9c26f65e3404845eaddb51",
       "source_path": "results/worthify/full-weight-seed42-heldout-20260924/frozen/batching-audit.jsonl",
+      "source_revision": "f95abfd80e842ef1b045cac2a15c389f7a4b4112",
       "source_sha256": "28fd0ae212f9f3ad63f04b60c3a9d043b2fdcbacd9152e23537a3d5a80682560"
     },
     "results/worthify/full-weight-seed42-heldout-20260924/frozen/receipt.json": {
       "relationship": "unchanged",
       "source_git_blob": "e50d3ace2b23bf2fdbd9bb68b89e0465a890646f",
       "source_path": "results/worthify/full-weight-seed42-heldout-20260924/frozen/receipt.json",
+      "source_revision": "f95abfd80e842ef1b045cac2a15c389f7a4b4112",
       "source_sha256": "b46d9f48617572a7cfdeaafdf58f458be68838347229f24eb7f32b225f79882e"
     },
     "results/worthify/full-weight-seed42-heldout-20260924/frozen/rows.jsonl": {
       "relationship": "unchanged",
       "source_git_blob": "488ced4b7b90b263d823cf6f76f901f63bf03f01",
       "source_path": "results/worthify/full-weight-seed42-heldout-20260924/frozen/rows.jsonl",
+      "source_revision": "f95abfd80e842ef1b045cac2a15c389f7a4b4112",
       "source_sha256": "e9582c4d2f0bbbc11d4631e4ff19421eed7accc5211c1d84744c5e416635daff"
     },
     "results/worthify/full-weight-seed42-heldout-20260924/full_provisional/batching-audit.jsonl": {
       "relationship": "unchanged",
       "source_git_blob": "22cd59e72d63dec5226007d8fb3d543b41bf8f3a",
       "source_path": "results/worthify/full-weight-seed42-heldout-20260924/full_provisional/batching-audit.jsonl",
+      "source_revision": "f95abfd80e842ef1b045cac2a15c389f7a4b4112",
       "source_sha256": "a287d4d2952bd1578e198f0318e850eecd7cf776f8575caf3110d820ec632f7d"
     },
     "results/worthify/full-weight-seed42-heldout-20260924/full_provisional/receipt.json": {
       "relationship": "unchanged",
       "source_git_blob": "c77c49f5635f4c8001e64ba115ca436df93ac426",
       "source_path": "results/worthify/full-weight-seed42-heldout-20260924/full_provisional/receipt.json",
+      "source_revision": "f95abfd80e842ef1b045cac2a15c389f7a4b4112",
       "source_sha256": "630bb264e66ead92bf9516f6e0e0e5b5a1aca10740ace59252c35430551722db"
     },
     "results/worthify/full-weight-seed42-heldout-20260924/full_provisional/rows.jsonl": {
       "relationship": "unchanged",
       "source_git_blob": "c59c52f244ade2ba2851018be6ffb549b3c9cfa3",
       "source_path": "results/worthify/full-weight-seed42-heldout-20260924/full_provisional/rows.jsonl",
+      "source_revision": "f95abfd80e842ef1b045cac2a15c389f7a4b4112",
       "source_sha256": "d1af0b8959e87b1b31b688ec6e7539997f6ee0dae887ddbe555de3ed2491aa7f"
     },
     "results/worthify/full-weight-seed42-heldout-20260924/prior_lora/batching-audit.jsonl": {
       "relationship": "unchanged",
       "source_git_blob": "37abc59879c06bc4f88b575e087ea7f0f3562a9d",
       "source_path": "results/worthify/full-weight-seed42-heldout-20260924/prior_lora/batching-audit.jsonl",
+      "source_revision": "f95abfd80e842ef1b045cac2a15c389f7a4b4112",
       "source_sha256": "36f52b457443069b1daa54ee0a927d5736c8915d18171f55f40e5fd3b3ba7581"
     },
     "results/worthify/full-weight-seed42-heldout-20260924/prior_lora/receipt.json": {
       "relationship": "unchanged",
       "source_git_blob": "7d1e6eb618314d67834ef76a006ef4697528cddf",
       "source_path": "results/worthify/full-weight-seed42-heldout-20260924/prior_lora/receipt.json",
+      "source_revision": "f95abfd80e842ef1b045cac2a15c389f7a4b4112",
       "source_sha256": "48a061afebde8ac80e2edaf126a46aec1c7849d85de592ac92916744f7e5d3f9"
     },
     "results/worthify/full-weight-seed42-heldout-20260924/prior_lora/rows.jsonl": {
       "relationship": "unchanged",
       "source_git_blob": "442e24da1a8402e29e9c13cca88470d247a48dfe",
       "source_path": "results/worthify/full-weight-seed42-heldout-20260924/prior_lora/rows.jsonl",
+      "source_revision": "f95abfd80e842ef1b045cac2a15c389f7a4b4112",
       "source_sha256": "556d21eef77b272cf9b3eda4880b10bd2568555c1405d5ccb525315d7a4ec0d4"
     },
     "results/worthify/full-weight-seed42-heldout-20260924/provenance.json": {
       "relationship": "unchanged",
       "source_git_blob": "d72670a2dcedaa37d0fff0594edbe4b17f7e6b73",
       "source_path": "results/worthify/full-weight-seed42-heldout-20260924/provenance.json",
+      "source_revision": "f95abfd80e842ef1b045cac2a15c389f7a4b4112",
       "source_sha256": "aa2c20274068e6322e59cae50a50891c2439726b29f2ac72fe09b3ee5ecc1b8f"
     },
     "src/openjev_phase1/__init__.py": {
       "relationship": "unchanged",
       "source_git_blob": "5adb167856d824e2be16e489645ccf1be0b264aa",
       "source_path": "src/openjev_phase1/__init__.py",
+      "source_revision": "f95abfd80e842ef1b045cac2a15c389f7a4b4112",
       "source_sha256": "96d51843ec9877d4295883914f8a698abaaecb4f8d321c451171761a8452ff0b"
     },
     "src/openjev_phase1/core.py": {
       "relationship": "unchanged",
       "source_git_blob": "fc18a3035a5aa2ab139ff64fa9f139e4c8c8cf2e",
       "source_path": "src/openjev_phase1/core.py",
+      "source_revision": "f95abfd80e842ef1b045cac2a15c389f7a4b4112",
       "source_sha256": "e419ba6a50de0f10b260e9dafb22848f0ed34c802d28746d509305de5527efd9"
     },
     "src/openjev_phase1/datasets.py": {
       "relationship": "unchanged",
       "source_git_blob": "44697962a01885621570cd05d4da1f4ca81693b3",
       "source_path": "src/openjev_phase1/datasets.py",
+      "source_revision": "f95abfd80e842ef1b045cac2a15c389f7a4b4112",
       "source_sha256": "7071853e5b67951bb5b12c361005c56dabb5f7925cdefcd4c36b279ff1d15bc1"
     },
     "src/openjev_phase1/direct.py": {
       "relationship": "unchanged",
       "source_git_blob": "362439944d632a9835ac7cbfc99eaf8af4c0d0c7",
       "source_path": "src/openjev_phase1/direct.py",
+      "source_revision": "f95abfd80e842ef1b045cac2a15c389f7a4b4112",
       "source_sha256": "84e216f5822f9e09377b49d1e568a4c42cf05c664cc5bc97be8ef8ce4c07314e"
     },
     "src/openjev_phase1/numeric_policy.py": {
       "relationship": "unchanged",
       "source_git_blob": "373952dadb97dcaea772b274cf90aa90707aa56f",
       "source_path": "src/openjev_phase1/numeric_policy.py",
+      "source_revision": "f95abfd80e842ef1b045cac2a15c389f7a4b4112",
       "source_sha256": "6eeaa7e910b8cd67f00bdadd589ab62d3593ce554d747a469c168e09bd66f0d3"
     },
     "src/openjev_phase1/task_lora.py": {
       "relationship": "unchanged",
       "source_git_blob": "dacaf9e171db4ad144c87f5f9b5f7a7d54403893",
       "source_path": "src/openjev_phase1/task_lora.py",
+      "source_revision": "f95abfd80e842ef1b045cac2a15c389f7a4b4112",
       "source_sha256": "a562a04f5651d7f4ba197577eb9efe6a8a5155fbb8db6bf57483cb3afa568fea"
     },
     "src/openjev_phase1/training.py": {
       "relationship": "unchanged",
       "source_git_blob": "a9b92bb886342fa14698a6ab06a7a33a73ba5be1",
       "source_path": "src/openjev_phase1/training.py",
+      "source_revision": "f95abfd80e842ef1b045cac2a15c389f7a4b4112",
       "source_sha256": "fa2b23cd5abcf476ed2b08cd14f055c290a6f2c93ddb9ef5a28b28256f05546d"
     },
     "tests/test_core.py": {
       "relationship": "unchanged",
       "source_git_blob": "a59ecbf2c0454a8412d7095cdf6df54c48f66c16",
       "source_path": "tests/test_core.py",
+      "source_revision": "f95abfd80e842ef1b045cac2a15c389f7a4b4112",
       "source_sha256": "a0124065c55925902c8d0fca14895aac417190d61e5c0b109e8d1cfedbd95795"
     },
     "tests/test_model_loading.py": {
       "relationship": "unchanged",
       "source_git_blob": "c02476c31ad823d78fde6a6b9da4e8af238c27ce",
       "source_path": "tests/test_model_loading.py",
+      "source_revision": "f95abfd80e842ef1b045cac2a15c389f7a4b4112",
       "source_sha256": "35f78e4ad8fad844d0ec129c98538f874ba1ce3e1abfd166c986c1a12ba26f6b"
     },
     "tests/test_numeric_policy.py": {
       "relationship": "unchanged",
       "source_git_blob": "efe449e1ebd9049a43d86697339c26488f1a6b62",
       "source_path": "tests/test_numeric_policy.py",
+      "source_revision": "f95abfd80e842ef1b045cac2a15c389f7a4b4112",
       "source_sha256": "18a44ff9208c6929e3bbb2c978137420984891334a74697a6b89126847535229"
     },
     "tests/test_task_lora.py": {
       "relationship": "unchanged",
       "source_git_blob": "214373326cdb522d235eba2b8c6b0a5864048295",
       "source_path": "tests/test_task_lora.py",
+      "source_revision": "f95abfd80e842ef1b045cac2a15c389f7a4b4112",
       "source_sha256": "89b1ccf1c473b0ad3aeab7de47017d7397510137c9aa284e9c5846d5239726e8"
     },
     "tests/test_training.py": {
       "relationship": "unchanged",
       "source_git_blob": "780e7c69a3db33577c78d2e6482875754d9e6bb2",
       "source_path": "tests/test_training.py",
+      "source_revision": "f95abfd80e842ef1b045cac2a15c389f7a4b4112",
       "source_sha256": "28c2848e2b0223e34cabea0160335cc11dcc02df735e06250e0b5dcd11cdc125"
     }
   },
@@ -325,15 +445,21 @@
     "AGENTS.md": "16c0341ee6c02751a1533224ab13b66194a24836b60ce1b0b0a65fd9d90cb12c",
     "LICENSE": "f765f2140f8507a8f0d81ec0fd2c4bd72fe6a066841ef27883ff876a76bf61be",
     "LICENSES/Apache-2.0.txt": "0d3ae2fb460d5ffb9ae6f63a25c7cc8bf5d41eb3b79c3685873435e37ec0b659",
-    "MODEL_CARD.md": "aa09df961faff6b1cf58d5f22fa0643414f41a0bfc95a5dd8ffb24b411d0e283",
-    "README.md": "61efd56f5caad8f341108509deb86e757f21ceb91fa0e8d84279f6cafce4d17d",
+    "MODEL_CARD.md": "59e0dc3ff128e5df78d172136101040e47b375188270d70b12f3798dc6c4db46",
+    "README.md": "1ab09d16035d0ddf133c39ddae1a2c49465cf205387b6affbd81082d04e99eeb",
     "THIRD_PARTY_WORTHIFY.md": "ac1aebfd121f5973ae85f01c8225d68f837d9b158698459ec2160bdb2f450a20",
-    "VALIDATION.json": "db1c4fe7a1646a8600ddac1ff94ff38ad22b1111e57a57c66786aa32bf735f4d",
+    "VALIDATION.json": "fba9611999a8a9e6ee2acfdff0954e1067c47de46777665c8ae15c388bc5826a",
     "benchmarks/render_decision_1_charts.py": "52a955743c6c34364fe70337bcd346974fe8798e8c33686020910ecb3b3e9fb4",
-    "benchmarks/verify_decision_1.py": "250552f53e765e9ec428a7fac0eda3ed39a7d92630b2ea481fe5f41a40da6bb6",
+    "benchmarks/verify_decision_1.py": "6f0494fd0df705e6ca88088827b501e821fdef9386a261c2d9950d2e8a9d857c",
     "benchmarks/verify_published.py": "b6d9681235db3468e929ee4f19cc2631fe0476140e5704bdf38b48498075f6d9",
-    "docs/EVIDENCE.md": "36e10b40014e17e713925238d5f3162af4e3d2ee962ed3cc862b403452fe9522",
+    "docs/EVIDENCE.md": "14a9b08e8cd4633d109c059aab32f2ccf1427cadc03b186a12c2918b531c43b8",
+    "docs/FOUNDATION_BANKING77_EXTENDED_LORA.md": "2adab7c2f2e638aec8f618b5376a65af905324f9ea7abbd2d124b51ce96075d7",
+    "docs/FOUNDATION_BANKING77_EXTENDED_LORA_RESULTS.md": "e5d4d841d6e3f0241ffef13784ba896faa3a8a2a23e058659889eea291d96e02",
+    "docs/FOUNDATION_BANKING77_TRANSFER_EVAL.md": "10ed4ce120def3901b2256d2b90df75e86de7f1855f53f403b511fda86b7f14c",
     "docs/PUBLIC_TASK_LORA.md": "ac1a98ce5bac670614b11c0b793b2ddadbd904a934f696185560031eb977725d",
+    "docs/assets/decision-1/banking77-validation-0-388-20260927-v1.json": "a469a1f01092567fe34f8193df3fd18e1163bf0734e2956d0148fda8bd274f19",
+    "docs/assets/decision-1/banking77-validation-0-388-20260927-v1.png": "10134b373f36c7e2cd5a15525f743e0823424d2c0299ee6e411891066b094417",
+    "docs/assets/decision-1/banking77-validation-0-388-20260927-v1.svg": "75180eb1d093ac008ac556fe65f981b867b0c21fce8d3e8666862435355ca4fe",
     "docs/assets/decision-1/banking77-validation-curve.png": "605b8c102132ea19cecbe9098404a843e96af8e4c249d2286f73e0e6c68311d7",
     "docs/assets/decision-1/matched-lora-outcomes.png": "d3b8436f034fd240bf2691d00aa478223bc0dd62b6d8e4c294f00f0459cf7599",
     "docs/assets/decision-1/seed42-heldout-families.png": "89352b80c15b3c5bf0372dc3197916f1e981496588d61206e7c91873712aea64",
@@ -342,8 +468,9 @@
     "examples/support/validation.jsonl": "558d8828960e31a4a36eb52d1e54c05dd378e531de3c7f7a175d3194f805f9bb",
     "pyproject.toml": "0be0b7e31433ea5e2de1b6c6501694097e4ce311257767901985e16f8a4f53d3",
     "results/phase1-summary.json": "fb39e7f8113d495972b92c8d924e78e511e83414550f405aab681a376df5d1bf",
-    "results/raw/SHA256SUMS": "6516b02c602439489558a90cbc75f613ef1be157aff08ef9a762970ef1ef3dd4",
+    "results/raw/SHA256SUMS": "4938e4965b9349ae533410a3094b5893a20f26cf1b01524dad37c93e21d9184c",
     "results/raw/decision-vs-compact-array.json": "dc101b9dde67516c50f1645b6256eb1c189b2c213988d1fc2e6684069a8157da",
+    "results/raw/foundation-banking77-extended-lora-20260927-v1.json": "2965b7f67ab5de1518731fb1ea2be5a01a823f68d6f231c328b006767d025f30",
     "results/raw/foundation-banking77-transfer-lora-20260926-v1.json": "d306fff34a2cfc46a50dbd32d29d520f151c79f5bd2586315017049b26f36415",
     "results/raw/foundation-transfer-lora-20260926-v1.json": "7c9c610758dd9277c03087785a599e294adcb982504212d93a9bbb988116a37f",
     "results/raw/full-weight-seed42-heldout-20260924.json": "c31016478dc49c5b9d295f0f243faf1803de3d0d48f027ad767c07bb91c018df",
@@ -352,6 +479,9 @@
     "results/raw/shape777-direct.json": "6266ae7587409b85c406ae0fa864d5890df0f60c5026ba024a01be804dbd83e3",
     "results/raw/shape777-reranker.json": "b667b2221858f48c1075ca981c0d505db564628babb8a07b1fc5013730adc473",
     "results/raw/shape777-reranker.predictions.jsonl": "ca90b920aa19b4a83da699368e0c1fd6b61515fca30a25f05d174e48bb1365d1",
+    "results/worthify/foundation-banking77-extended-lora-20260927-v1/SHA256SUMS": "3c6bc5cdd1cf05f4f84283e12236b349375589f95c6db0c113cdce48fe665c45",
+    "results/worthify/foundation-banking77-extended-lora-20260927-v1/paired-rows.jsonl": "88c71f6ff9f3d998a53b5d9c9d24cc8a1aff927530437b7d52d2e085321fdc1a",
+    "results/worthify/foundation-banking77-extended-lora-20260927-v1/report.json": "f6e3032fa429e51cff84c13e3688d87634ab7a6d0a14cb770fcaaa6024e7d0c4",
     "results/worthify/foundation-banking77-transfer-lora-20260926-v1/SHA256SUMS": "062c06132e5112030b7d5e0bb82289eee81717295e91e0463079f20a96dfe7c8",
     "results/worthify/foundation-banking77-transfer-lora-20260926-v1/paired-rows.jsonl": "e84cb53b1989e1ea024f6c9dc87656a089fc37bddb59b76633b153193f617f6d",
     "results/worthify/foundation-banking77-transfer-lora-20260926-v1/report.json": "6df2a7de69c6cdbb0808d998153543770350d35fb6519ad17b0dbcad5bbb95fe",
@@ -378,14 +508,15 @@
     "src/openjev_phase1/task_lora.py": "a562a04f5651d7f4ba197577eb9efe6a8a5155fbb8db6bf57483cb3afa568fea",
     "src/openjev_phase1/training.py": "fa2b23cd5abcf476ed2b08cd14f055c290a6f2c93ddb9ef5a28b28256f05546d",
     "tests/test_core.py": "a0124065c55925902c8d0fca14895aac417190d61e5c0b109e8d1cfedbd95795",
-    "tests/test_evidence.py": "bec03a0fec6645647bec618b42896a82970252cd01f9b572da854160995bd008",
+    "tests/test_evidence.py": "c6f40550d3da9d2fe7e76eb63da5ded52053630a8093bea2d03366b9c24f7fe0",
     "tests/test_model_loading.py": "35f78e4ad8fad844d0ec129c98538f874ba1ce3e1abfd166c986c1a12ba26f6b",
     "tests/test_numeric_policy.py": "18a44ff9208c6929e3bbb2c978137420984891334a74697a6b89126847535229",
     "tests/test_task_lora.py": "89b1ccf1c473b0ad3aeab7de47017d7397510137c9aa284e9c5846d5239726e8",
     "tests/test_training.py": "28c2848e2b0223e34cabea0160335cc11dcc02df735e06250e0b5dcd11cdc125"
   },
   "source_repository": "Worthify/worthify-open-jev",
-  "source_revision": "f95abfd80e842ef1b045cac2a15c389f7a4b4112",
+  "source_revision": "17902679141a4dabb025e6431697f9eff0ec7018",
+  "source_revision_note": "Latest integrated research-source revision; each copied/adapted file records its original immutable source revision and hashes.",
   "upstream_repository": "https://github.com/bonsai/openjev",
   "upstream_revision": "53e3028363509f8533d90fe82d983770da1f6c02"
 }

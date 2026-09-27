@@ -25,10 +25,10 @@ Gemma 4 12B; it is a full-weight checkpoint, not a merged task adapter.
 | Fresh LoRA on each base, BANKING77 · 388 updates | **93.21%** on Decision-1 versus **93.54%** on original Gemma; −0.32 percentage points on 3,080 transformed 16-option test rows. |
 | Fresh LoRA on each base, CTU-13 | **0.115** versus **0.432** macro-F1; the Decision-1 base regressed in this one sealed scenario. |
 
-These are results for the **single-seed full-weight preview**, with
+These are results for a **public, single-seed research preview**, with
 validation-selected checkpoint step 3,200. The planned second full-weight seed has not
-run; this is not a final two-seed model release. The adapter comparisons use that
-preview as the tuned base. No general LoRA advantage or faster convergence is claimed.
+run; this is not a two-seed reproducibility result. The adapter comparisons use this
+checkpoint as the tuned base. No general LoRA advantage or faster convergence is claimed.
 
 ## Watch a decision change
 
@@ -81,13 +81,13 @@ The extension used 1,540 training rows, 365 validation rows, four epochs and
 388 updates. Each run's checkpoint and each base's seed were selected on
 validation before fresh-process parity checks and sealed-test scoring.
 
-The **latest 388-update study's selected adapters** are pinned here:
-[Decision-1 base, update 325](https://huggingface.co/Worthify/worthify-decision-1-banking77-lora-preview/tree/271f72502162b3b408b26dd826a6ca441937bbbb) and
-[original-Gemma base, update 350](https://huggingface.co/Worthify/gemma4-banking77-raw-control-lora-preview/tree/ad60b65b644b11a54428445b2f96c3b672ae5d20).
+The **latest 388-update study's selected adapters** are available as separate
+public packages: [Decision-1 base, update 325](https://huggingface.co/Worthify/decision-1-banking77-lora/tree/f1eb03b8f5ee86c4dce026c24d5d4e3694a06130) and
+[original-Gemma base, update 350](https://huggingface.co/Worthify/gemma4-banking77-control-lora/tree/71af5367a06a7dee52ba0adb9c8f67def27881e2).
 Both are seed-42 packages pinned to immutable commits, with base revisions and
 numeric policies recorded. The earlier-study packages are listed separately below.
 
-![BANKING77 validation through 388 updates, with two adapter seeds per base and bold seed means](docs/assets/decision-1/banking77-validation-0-388-20260927-v1.png)
+![BANKING77 validation through 388 updates, with two adapter seeds per base and bold seed means](https://huggingface.co/Worthify/Decision-1/resolve/813229cef8a8a72c98f9a236e3e42010857ce576/media/banking77-validation-0-388-20260927-v1.png)
 
 Decision-1 started lower and had greater baseline-adjusted validation-accuracy
 area and greater area over updates 194–388 in both seed pairs. Original Gemma
@@ -108,13 +108,12 @@ did not preserve optimizer or RNG state, so all extended adapters started
 fresh. The old and new trajectories diverged at the update-97 epoch-end batch;
 the cause was not isolated. The new plot is not a resumed or spliced old curve.
 
-The [earlier BANKING77 report](results/worthify/foundation-banking77-transfer-lora-20260926-v1/report.json)
-and [earlier paired-outcomes chart](docs/assets/decision-1/matched-lora-outcomes.png)
-remain available. The
-[Decision-1 LoRA](https://huggingface.co/Worthify/worthify-decision-1-banking77-lora-preview/tree/b1ca7e69b5441904cb7c8e34cb6f8823c2d82c42)
-and [original-Gemma control](https://huggingface.co/Worthify/gemma4-banking77-raw-control-lora-preview/tree/28c650466e81a2539f0f59b2ac541cbce7bd4736)
-are the **earlier 194-update study's selected artifacts**, not the extended
-study adapters. Each pins its base revision and numeric policy.
+The [earlier BANKING77 report](https://github.com/Worthify-AI/worthify-decision-1/blob/98aa8d5a141f85c0e97fc8fb45c4eafa1e4a6d39/results/worthify/foundation-banking77-transfer-lora-20260926-v1/report.json)
+and [earlier paired-outcomes chart](https://huggingface.co/Worthify/Decision-1/resolve/48acdb76db1d73e0f481b1e2079e7289db0621cc/media/matched-lora-outcomes.png)
+remain available. The **earlier 194-update study's selected artifacts** remain
+archived in the private experiment repositories, distinct from the public
+388-update adapter packages. The earlier report records their base revisions and
+numeric policies.
 
 The CTU-13 comparison remains a counterexample: on one sealed flow scenario,
 original Gemma scored **0.432 macro-F1** and Decision-1 scored **0.115**. Both
@@ -125,9 +124,11 @@ BANKING77 was chosen after that CTU-13 regression and is close to intent-routing
 data already present in full-weight training, including CLINC150. Every menu
 offers the answer plus 15 distractors from 77 intents; these are **not standard
 77-way BANKING77 scores**. Lexical exclusion does not establish semantic novelty.
-The [extended results and method](docs/FOUNDATION_BANKING77_EXTENDED_LORA_RESULTS.md),
-[text-free paired rows](results/worthify/foundation-banking77-extended-lora-20260927-v1/paired-rows.jsonl),
-and [evidence guide](docs/EVIDENCE.md) retain the positive and negative outcomes.
+The [four-epoch method](https://huggingface.co/Worthify/Decision-1/blob/813229cef8a8a72c98f9a236e3e42010857ce576/evidence/banking77-extended/method.md),
+[full report](https://huggingface.co/Worthify/Decision-1/blob/813229cef8a8a72c98f9a236e3e42010857ce576/evidence/banking77-extended/report.json),
+and [3,080 text-free paired rows](https://huggingface.co/Worthify/Decision-1/blob/813229cef8a8a72c98f9a236e3e42010857ce576/evidence/banking77-extended/paired-rows.jsonl)
+preserve both outcomes and their provenance. The [evidence guide](https://github.com/Worthify-AI/worthify-decision-1/blob/98aa8d5a141f85c0e97fc8fb45c4eafa1e4a6d39/docs/EVIDENCE.md)
+explains how to rerun the public checks.
 
 ## What the full-weight checkpoint measured
 
@@ -154,13 +155,13 @@ example in the test sample; 512 routing rows use `none_of_above` as gold. The
 authored/menu families are bounded fixtures, not evidence of real-world cyber or
 operational performance. The [aggregate held-out report](https://huggingface.co/Worthify/Decision-1/blob/48acdb76db1d73e0f481b1e2079e7289db0621cc/evidence/full-weight-seed42-heldout.json)
 can be recomputed from the exact text-free held-out prediction rows for
-[frozen Gemma](results/worthify/full-weight-seed42-heldout-20260924/frozen/rows.jsonl),
-[the earlier task LoRA](results/worthify/full-weight-seed42-heldout-20260924/prior_lora/rows.jsonl), and
-[Decision-1](results/worthify/full-weight-seed42-heldout-20260924/full_provisional/rows.jsonl).
+[frozen Gemma](https://github.com/Worthify-AI/worthify-decision-1/blob/98aa8d5a141f85c0e97fc8fb45c4eafa1e4a6d39/results/worthify/full-weight-seed42-heldout-20260924/frozen/rows.jsonl),
+[the earlier task LoRA](https://github.com/Worthify-AI/worthify-decision-1/blob/98aa8d5a141f85c0e97fc8fb45c4eafa1e4a6d39/results/worthify/full-weight-seed42-heldout-20260924/prior_lora/rows.jsonl), and
+[Decision-1](https://github.com/Worthify-AI/worthify-decision-1/blob/98aa8d5a141f85c0e97fc8fb45c4eafa1e4a6d39/results/worthify/full-weight-seed42-heldout-20260924/full_provisional/rows.jsonl).
 
 ## Train a task LoRA
 
-The [pinned Worthify source and training recipe](docs/PUBLIC_TASK_LORA.md)
+The [pinned Worthify source and training recipe](https://github.com/Worthify-AI/worthify-decision-1/blob/98aa8d5a141f85c0e97fc8fb45c4eafa1e4a6d39/docs/PUBLIC_TASK_LORA.md)
 shows the expected JSONL rows, a fresh adapter run, reload verification, and
 evaluation on a separate test file.
 Compare your adapter with one trained on the pinned original Gemma base under
@@ -169,14 +170,14 @@ the same task rows and training budget.
 ```bash
 git clone https://github.com/Worthify-AI/worthify-decision-1.git
 cd worthify-decision-1
+git checkout 98aa8d5a141f85c0e97fc8fb45c4eafa1e4a6d39
 python -m venv .venv && .venv/bin/python -m pip install -e '.[train]'
 ```
 
 ## Try one decision
 
-The checkpoint may require an authorized Hugging Face login, depending on its
-repository permissions. Scoring needs one visible CUDA GPU. From the checkout
-above, create `decisions.jsonl`:
+The public model requires one visible CUDA GPU for this local NF4 example.
+From the checkout above, create `decisions.jsonl`:
 
 ```json
 {"id":"route-1","state":{"claim":"Harbor gateway H-2 received release 5.4.2 before the noon audit.","records":[{"source":"gateway installation log","text":"H-2 installed release 5.4.2 successfully.","time":"10:42"},{"source":"asset inventory","text":"Harbor gateway is H-2; installed release 5.4.2.","time":"11:11"}]},"question":"Which evidence route is warranted by the supplied records?","options":[{"id":"supported","description":"The supplied records support the precise claim."},{"id":"contradicted","description":"The supplied records conflict with the precise claim."},{"id":"insufficient","description":"The supplied records do not settle the precise claim."}]}
@@ -214,13 +215,17 @@ omit, and the present interface accepts at most 16. Browser or game videos
 convert their state to text. Native cache paths remain disabled after
 equivalence failures. Batch grouping changed logits in diagnostics, so the
 main held-out table is a batch-four result rather than a universal
-single-request guarantee. The second full-weight seed, five-task adapter
-series, and broader public media verification remain open follow-up work.
+single-request guarantee. The second full-weight seed and five-task adapter
+series have not been run; neither is a result of this public research preview.
 
 The Gemma-derived weights carry Apache-2.0 terms with applicable attribution.
+The [public release inventory](https://huggingface.co/Worthify/Decision-1/blob/main/public-release.json)
+binds the current card, config, weights, evaluation files, videos, adapter
+commits, and source recipe by SHA-256. Earlier export receipts retain their
+original private-review scope and hashes.
 Worthify's source additions to MIT-licensed [OpenJev](https://github.com/bonsai/openjev/tree/53e3028363509f8533d90fe82d983770da1f6c02)
 remain MIT. CLINC150, WANLI, MultiNLI, and BANKING77 retain their separate
-source terms; the [attribution inventory](THIRD_PARTY_WORTHIFY.md)
+source terms; the [attribution inventory](https://github.com/Worthify-AI/worthify-decision-1/blob/98aa8d5a141f85c0e97fc8fb45c4eafa1e4a6d39/THIRD_PARTY_WORTHIFY.md)
 records their provenance.
 Worthify Decision-1 is Worthify's own Gemma post-training. It does not use
 TypeSafe Jev output as training labels or claim TypeSafe API compatibility.

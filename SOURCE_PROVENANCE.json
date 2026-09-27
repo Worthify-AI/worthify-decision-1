@@ -1,12 +1,12 @@
 {
   "external_artifact_revisions": {
     "latest_banking77_original_adapter": {
-      "repo": "Worthify/gemma4-banking77-raw-control-lora-preview",
-      "revision": "ad60b65b644b11a54428445b2f96c3b672ae5d20"
+      "repo": "Worthify/gemma4-banking77-control-lora",
+      "revision": "71af5367a06a7dee52ba0adb9c8f67def27881e2"
     },
     "latest_banking77_tuned_adapter": {
-      "repo": "Worthify/worthify-decision-1-banking77-lora-preview",
-      "revision": "271f72502162b3b408b26dd826a6ca441937bbbb"
+      "repo": "Worthify/decision-1-banking77-lora",
+      "revision": "f1eb03b8f5ee86c4dce026c24d5d4e3694a06130"
     },
     "branded_media": {
       "repo": "Worthify/Decision-1",
@@ -474,7 +474,7 @@
     "AGENTS.md": "16c0341ee6c02751a1533224ab13b66194a24836b60ce1b0b0a65fd9d90cb12c",
     "LICENSE": "f765f2140f8507a8f0d81ec0fd2c4bd72fe6a066841ef27883ff876a76bf61be",
     "LICENSES/Apache-2.0.txt": "0d3ae2fb460d5ffb9ae6f63a25c7cc8bf5d41eb3b79c3685873435e37ec0b659",
-    "MODEL_CARD.md": "5793c41cd30755e3b7af1ca1b5fe3e336ab78cf45647b297302f3d1b9e068c3e",
+    "MODEL_CARD.md": "02c75a27d8c0e4100ab2a93782ab946a256e50d03c8db9136b1a2daf0976d619",
     "README.md": "504c0e8accb7856553943f3f4f3cba2bef74d68cb93b65a7ccb521024165897f",
     "THIRD_PARTY_WORTHIFY.md": "ac1aebfd121f5973ae85f01c8225d68f837d9b158698459ec2160bdb2f450a20",
     "VALIDATION.json": "84fd05cea91cf1b6b4ad5a8b42617e562f6dea535afe2afe11faa2da11c6baa2",

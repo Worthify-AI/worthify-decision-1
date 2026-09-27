@@ -1,4 +1,22 @@
 {
+  "external_artifact_revisions": {
+    "latest_banking77_original_adapter": {
+      "repo": "Worthify/gemma4-banking77-raw-control-lora-preview",
+      "revision": "ad60b65b644b11a54428445b2f96c3b672ae5d20"
+    },
+    "latest_banking77_tuned_adapter": {
+      "repo": "Worthify/worthify-decision-1-banking77-lora-preview",
+      "revision": "271f72502162b3b408b26dd826a6ca441937bbbb"
+    },
+    "video_posters": {
+      "repo": "Worthify/Decision-1",
+      "revision": "9d832aa4940e4be201008b470ba5790dfe01e402"
+    },
+    "videos": {
+      "repo": "Worthify/Decision-1",
+      "revision": "48acdb76db1d73e0f481b1e2079e7289db0621cc"
+    }
+  },
   "files": {
     "LICENSE": {
       "relationship": "unchanged",
@@ -15,6 +33,15 @@
       "source_sha256": "0d3ae2fb460d5ffb9ae6f63a25c7cc8bf5d41eb3b79c3685873435e37ec0b659"
     },
     "MODEL_CARD.md": {
+      "additional_source_inputs": [
+        {
+          "purpose": "Three video poster attributes; video source revisions unchanged",
+          "source_git_blob": "065ecf84a28921d761cc260990d5d3eb6daac382",
+          "source_path": "docs/model-card-v2-hf-review.md",
+          "source_revision": "88cc6c9eb07429d988ebacd086f19cf854380310",
+          "source_sha256": "c62ddabab62b212d8a2bd2052ba250150307e5783ce393f993ed1a7941dd01e4"
+        }
+      ],
       "relationship": "adapted for curated distribution",
       "source_git_blob": "423d4e0b09c2251514951fd4fbb883d05f7e230b",
       "source_path": "docs/model-card-v2-hf-review.md",
@@ -445,14 +472,14 @@
     "AGENTS.md": "16c0341ee6c02751a1533224ab13b66194a24836b60ce1b0b0a65fd9d90cb12c",
     "LICENSE": "f765f2140f8507a8f0d81ec0fd2c4bd72fe6a066841ef27883ff876a76bf61be",
     "LICENSES/Apache-2.0.txt": "0d3ae2fb460d5ffb9ae6f63a25c7cc8bf5d41eb3b79c3685873435e37ec0b659",
-    "MODEL_CARD.md": "59e0dc3ff128e5df78d172136101040e47b375188270d70b12f3798dc6c4db46",
-    "README.md": "1ab09d16035d0ddf133c39ddae1a2c49465cf205387b6affbd81082d04e99eeb",
+    "MODEL_CARD.md": "f3d004f12bb6a45fe660df4f61e51c6daefb4e63927169050e5f6059486cefab",
+    "README.md": "d0a768f43927d04d36adcc9e9fd8f5cf1764e43d27f08b714125b35794b31398",
     "THIRD_PARTY_WORTHIFY.md": "ac1aebfd121f5973ae85f01c8225d68f837d9b158698459ec2160bdb2f450a20",
-    "VALIDATION.json": "fba9611999a8a9e6ee2acfdff0954e1067c47de46777665c8ae15c388bc5826a",
+    "VALIDATION.json": "eb413fc1f9665fade68e1a891ce79e996dd44855c9ba1868a2759a3390f74cde",
     "benchmarks/render_decision_1_charts.py": "52a955743c6c34364fe70337bcd346974fe8798e8c33686020910ecb3b3e9fb4",
     "benchmarks/verify_decision_1.py": "6f0494fd0df705e6ca88088827b501e821fdef9386a261c2d9950d2e8a9d857c",
     "benchmarks/verify_published.py": "b6d9681235db3468e929ee4f19cc2631fe0476140e5704bdf38b48498075f6d9",
-    "docs/EVIDENCE.md": "14a9b08e8cd4633d109c059aab32f2ccf1427cadc03b186a12c2918b531c43b8",
+    "docs/EVIDENCE.md": "14595699005fea6420736aeca305a47a16d8627620ad5dfb5388bf4960f0d42b",
     "docs/FOUNDATION_BANKING77_EXTENDED_LORA.md": "2adab7c2f2e638aec8f618b5376a65af905324f9ea7abbd2d124b51ce96075d7",
     "docs/FOUNDATION_BANKING77_EXTENDED_LORA_RESULTS.md": "e5d4d841d6e3f0241ffef13784ba896faa3a8a2a23e058659889eea291d96e02",
     "docs/FOUNDATION_BANKING77_TRANSFER_EVAL.md": "10ed4ce120def3901b2256d2b90df75e86de7f1855f53f403b511fda86b7f14c",

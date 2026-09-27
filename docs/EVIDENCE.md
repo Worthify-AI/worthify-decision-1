@@ -18,6 +18,12 @@ budget and seed-matched initial LoRA tensors. Rank-16 q/k/v/o adapters use NF4
 base weights, BF16 computation and an FP32 final-softcap option loss. Each arm
 selected its checkpoint and seed on validation before scoring test.
 
+The latest four-epoch study's private, validation-selected packages are
+[Decision-1, seed 42 at update 325](https://huggingface.co/Worthify/worthify-decision-1-banking77-lora-preview/tree/271f72502162b3b408b26dd826a6ca441937bbbb) and
+[original Gemma, seed 42 at update 350](https://huggingface.co/Worthify/gemma4-banking77-raw-control-lora-preview/tree/ad60b65b644b11a54428445b2f96c3b672ae5d20).
+The links pin immutable package commits. Historical 194-update artifacts remain
+separately labeled in the [model card](../MODEL_CARD.md).
+
 BANKING77 used 1,540 training rows and 365 validation rows. The original
 comparison ran two epochs and 194 updates; the fresh extension ran four epochs
 and 388 updates. Both validate at step zero, every 25 updates and epoch ends.

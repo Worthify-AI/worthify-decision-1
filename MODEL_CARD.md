@@ -39,7 +39,7 @@ inventory record lead it to `supported`. In the complete six-stage authored repl
 it matched four expected routes and missed two. This is a demonstration of the
 interface, not an accuracy benchmark.
 
-<video controls playsinline preload="metadata" width="100%" src="https://huggingface.co/Worthify/Decision-1/resolve/48acdb76db1d73e0f481b1e2079e7289db0621cc/media/evidence.mp4"></video>
+<video controls playsinline preload="metadata" width="100%" poster="https://huggingface.co/Worthify/Decision-1/resolve/9d832aa4940e4be201008b470ba5790dfe01e402/media/evidence-poster.png" src="https://huggingface.co/Worthify/Decision-1/resolve/48acdb76db1d73e0f481b1e2079e7289db0621cc/media/evidence.mp4"></video>
 
 **The same menu handles traffic shape.** In a synthetic window of small, roughly
 periodic outbound records, the model chooses `beacon_like` from descriptions of
@@ -47,7 +47,7 @@ observable patterns. It sees connection metadata, not packet payloads. Four of s
 authored windows matched their expected route. The label makes no claim about
 malicious intent.
 
-<video controls playsinline preload="metadata" width="100%" src="https://huggingface.co/Worthify/Decision-1/resolve/48acdb76db1d73e0f481b1e2079e7289db0621cc/media/traffic.mp4"></video>
+<video controls playsinline preload="metadata" width="100%" poster="https://huggingface.co/Worthify/Decision-1/resolve/9d832aa4940e4be201008b470ba5790dfe01e402/media/traffic-poster.png" src="https://huggingface.co/Worthify/Decision-1/resolve/48acdb76db1d73e0f481b1e2079e7289db0621cc/media/traffic.mp4"></video>
 
 **A text-state game keeps moving.** In one falling-block run, code supplied legal
 placements and board features as text. The same full-weight model selected placement
@@ -55,7 +55,7 @@ goals and buttons for 30 pieces, cleared six lines, and applied 25 rotations whi
 gravity advanced. This single seed has no raw-Gemma control and is not a gameplay
 benchmark. The model did not see pixels.
 
-<video controls playsinline preload="metadata" width="100%" src="https://huggingface.co/Worthify/Decision-1/resolve/48acdb76db1d73e0f481b1e2079e7289db0621cc/media/tetris.mp4"></video>
+<video controls playsinline preload="metadata" width="100%" poster="https://huggingface.co/Worthify/Decision-1/resolve/9d832aa4940e4be201008b470ba5790dfe01e402/media/tetris-poster.png" src="https://huggingface.co/Worthify/Decision-1/resolve/48acdb76db1d73e0f481b1e2079e7289db0621cc/media/tetris.mp4"></video>
 
 ## Does it make a better base for your LoRA?
 
@@ -75,6 +75,12 @@ BF16 computation, FP32 final-softcap option loss, optimizer and update budget.
 The extension used 1,540 training rows, 365 validation rows, four epochs and
 388 updates. Each run's checkpoint and each base's seed were selected on
 validation before fresh-process parity checks and sealed-test scoring.
+
+The **latest 388-update study's selected adapters** are available for private
+review: [Decision-1 base, update 325](https://huggingface.co/Worthify/worthify-decision-1-banking77-lora-preview/tree/271f72502162b3b408b26dd826a6ca441937bbbb) and
+[original-Gemma base, update 350](https://huggingface.co/Worthify/gemma4-banking77-raw-control-lora-preview/tree/ad60b65b644b11a54428445b2f96c3b672ae5d20).
+Both are seed-42 packages pinned to immutable commits, with base revisions and
+numeric policies recorded. The earlier-study packages are listed separately below.
 
 ![BANKING77 validation through 388 updates, with two adapter seeds per base and bold seed means](docs/assets/decision-1/banking77-validation-0-388-20260927-v1.png)
 

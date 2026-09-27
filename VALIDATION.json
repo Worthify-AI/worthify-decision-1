@@ -22,7 +22,8 @@
     "decision_1_evidence": "passed: original and extended BANKING77 plus CTU-13 task studies; seed metrics, paired outcomes, BANKING77 sensitivity/bootstrap/curves, extended validation checkpoint/seed selection and all six SVG curves; 21 full-weight family headline scores",
     "source_git_blob_hashes": "All 60 copied/adapted input hashes and Git blob IDs match their individually recorded immutable source revisions.",
     "snapshot_inventory_and_relative_links": "passed",
-    "chart_regeneration": "Original three chart artifacts retain their source hashes. Extended SVG/PNG retain verified source-staging hashes; the local verifier independently recomputed all six SVG polylines. PNG rasterization was checked at source staging with CairoSVG 2.9.0."
+    "chart_regeneration": "Original three chart artifacts retain their source hashes. Extended SVG/PNG retain verified source-staging hashes; the local verifier independently recomputed all six SVG polylines. PNG rasterization was checked at source staging with CairoSVG 2.9.0.",
+    "review_artifact_links": "Latest 388-update adapter package commits are explicitly labeled and distinct from historical 194-update links. Three poster attributes match immutable research source 88cc6c9eb07429d988ebacd086f19cf854380310; video source commits are unchanged. Private remote adapter download verification was performed in the research packaging workflow, not rerun by the curated snapshot checks."
   },
   "limits": [
     "Runtime source files are byte-identical to their recorded source revision; the authored GPU smoke does not estimate model quality.",

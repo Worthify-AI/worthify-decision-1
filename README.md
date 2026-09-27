@@ -66,6 +66,11 @@ These are validation-selected adapters with two adapter seeds per base:
 | Earlier BANKING77, 194 updates · 16-option accuracy | 90.42% | **91.62%** |
 | CTU-13, one held-out flow scenario · macro-F1 | **0.432** | 0.115 |
 
+Review the **latest 388-update study adapters**:
+[LoRA on Decision-1](https://huggingface.co/Worthify/worthify-decision-1-banking77-lora-preview/tree/271f72502162b3b408b26dd826a6ca441937bbbb) ·
+[original-Gemma control](https://huggingface.co/Worthify/gemma4-banking77-raw-control-lora-preview/tree/ad60b65b644b11a54428445b2f96c3b672ae5d20).
+These pinned comparison packages require authorized Hugging Face access.
+
 ![BANKING77 validation through 388 updates: two adapter seeds per base and their means](docs/assets/decision-1/banking77-validation-0-388-20260927-v1.png)
 
 Under the 388-update budget, original Gemma scored higher on test in both seed pairs. The

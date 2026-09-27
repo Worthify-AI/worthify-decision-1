@@ -1,0 +1,1345 @@
+{
+  "arms": {
+    "frozen": {
+      "batched_rows_per_second": 16.84083796622196,
+      "batching_audit": {
+        "batched_correct": 118,
+        "changed_choices": 2,
+        "direct_correct": 120,
+        "max_abs_logit_difference": 23.881845500320196,
+        "rows": 128,
+        "sampling_seed": 20260924,
+        "scope": "Up to 128 fixed sampled rows; not a full single-request benchmark"
+      },
+      "family_metrics": {
+        "classification": {
+          "accuracy": 0.9466145833333334,
+          "brier_multiclass": 0.09528215154574379,
+          "cross_entropy": 0.40566173084933216,
+          "ece_10": 0.04498807968418436,
+          "macro_f1": 0.6220963882241639,
+          "macro_f1_class_set": [
+            "accept_reservations",
+            "account_blocked",
+            "alarm",
+            "application_status",
+            "apr",
+            "are_you_a_bot",
+            "balance",
+            "bill_balance",
+            "bill_due",
+            "book_flight",
+            "book_hotel",
+            "calculator",
+            "calendar",
+            "calendar_update",
+            "calories",
+            "cancel",
+            "cancel_reservation",
+            "car_rental",
+            "card_declined",
+            "carry_on",
+            "change_accent",
+            "change_ai_name",
+            "change_language",
+            "change_speed",
+            "change_user_name",
+            "change_volume",
+            "confirm_reservation",
+            "cook_time",
+            "credit_limit",
+            "credit_limit_change",
+            "credit_score",
+            "current_location",
+            "damaged_card",
+            "date",
+            "definition",
+            "direct_deposit",
+            "directions",
+            "distance",
+            "do_you_have_pets",
+            "exchange_rate",
+            "expiration_date",
+            "find_phone",
+            "flight_status",
+            "flip_coin",
+            "food_last",
+            "freeze_account",
+            "fun_fact",
+            "gas",
+            "gas_type",
+            "goodbye",
+            "greeting",
+            "how_busy",
+            "how_old_are_you",
+            "improve_credit_score",
+            "income",
+            "ingredient_substitution",
+            "ingredients_list",
+            "insurance",
+            "insurance_change",
+            "interest_rate",
+            "international_fees",
+            "international_visa",
+            "jump_start",
+            "last_maintenance",
+            "lost_luggage",
+            "make_call",
+            "maybe",
+            "meal_suggestion",
+            "meaning_of_life",
+            "measurement_conversion",
+            "meeting_schedule",
+            "min_payment",
+            "mpg",
+            "new_card",
+            "next_holiday",
+            "next_song",
+            "no",
+            "none_of_above",
+            "nutrition_info",
+            "oil_change_how",
+            "oil_change_when",
+            "order",
+            "order_checks",
+            "order_status",
+            "pay_bill",
+            "payday",
+            "pin_change",
+            "play_music",
+            "plug_type",
+            "pto_balance",
+            "pto_request",
+            "pto_request_status",
+            "pto_used",
+            "recipe",
+            "redeem_rewards",
+            "reminder",
+            "reminder_update",
+            "repeat",
+            "replacement_card_duration",
+            "report_fraud",
+            "report_lost_card",
+            "reset_settings",
+            "restaurant_reservation",
+            "restaurant_reviews",
+            "restaurant_suggestion",
+            "rewards_balance",
+            "roll_dice",
+            "rollover_401k",
+            "routing",
+            "schedule_maintenance",
+            "schedule_meeting",
+            "share_location",
+            "shopping_list",
+            "shopping_list_update",
+            "smart_home",
+            "spelling",
+            "spending_history",
+            "sync_device",
+            "taxes",
+            "tell_joke",
+            "text",
+            "thank_you",
+            "time",
+            "timer",
+            "timezone",
+            "tire_change",
+            "tire_pressure",
+            "todo_list",
+            "todo_list_update",
+            "traffic",
+            "transactions",
+            "transfer",
+            "translate",
+            "travel_alert",
+            "travel_notification",
+            "travel_suggestion",
+            "uber",
+            "update_playlist",
+            "user_name",
+            "vaccines",
+            "w2",
+            "weather",
+            "what_are_your_hobbies",
+            "what_can_i_ask_you",
+            "what_is_your_name",
+            "what_song",
+            "where_are_you_from",
+            "whisper_mode",
+            "who_do_you_work_for",
+            "who_made_you",
+            "yes"
+          ],
+          "metric": "macro_f1",
+          "nll": 0.4056617308493321,
+          "rows": 768,
+          "score": 0.6220963882241639
+        },
+        "cyber": {
+          "accuracy": 0.83984375,
+          "brier_multiclass": 0.3012216988160754,
+          "cross_entropy": 1.2657103199054303,
+          "ece_10": 0.14380278830245208,
+          "macro_f1": 0.8320014595876666,
+          "macro_f1_class_set": null,
+          "metric": "accuracy",
+          "nll": 1.2657103199054303,
+          "rows": 256,
+          "score": 0.83984375
+        },
+        "evidence_mnli": {
+          "accuracy": 0.765625,
+          "brier_multiclass": 0.45696338038032486,
+          "cross_entropy": 2.037386707598442,
+          "ece_10": 0.2304202705241869,
+          "macro_f1": 0.7661196466817076,
+          "macro_f1_class_set": [
+            "contradicted",
+            "insufficient",
+            "supported"
+          ],
+          "metric": "macro_f1",
+          "nll": 2.037386707598442,
+          "rows": 256,
+          "score": 0.7661196466817076
+        },
+        "evidence_wanli": {
+          "accuracy": 0.6979166666666666,
+          "brier_multiclass": 0.5819305946282791,
+          "cross_entropy": 2.9789564369927866,
+          "ece_10": 0.285732172095741,
+          "macro_f1": 0.6724057002717165,
+          "macro_f1_class_set": [
+            "contradicted",
+            "insufficient",
+            "supported"
+          ],
+          "metric": "macro_f1",
+          "nll": 2.9789564369927866,
+          "rows": 384,
+          "score": 0.6724057002717165
+        },
+        "menu": {
+          "accuracy": 0.9931640625,
+          "brier_multiclass": 0.006300701945951138,
+          "cross_entropy": 0.012866977401878907,
+          "ece_10": 0.0030697341630341072,
+          "macro_f1": 0.9952818137412706,
+          "macro_f1_class_set": null,
+          "metric": "accuracy",
+          "nll": 0.012866977401878907,
+          "rows": 1024,
+          "score": 0.9931640625
+        },
+        "procedural": {
+          "accuracy": 0.91015625,
+          "brier_multiclass": 0.15218827408751032,
+          "cross_entropy": 0.6939670021113266,
+          "ece_10": 0.07822589552742414,
+          "macro_f1": 0.9104752497408923,
+          "macro_f1_class_set": null,
+          "metric": "accuracy",
+          "nll": 0.6939670021113266,
+          "rows": 256,
+          "score": 0.91015625
+        },
+        "uncertainty": {
+          "accuracy": 0.85546875,
+          "brier_multiclass": 0.27702571130158715,
+          "cross_entropy": 1.8226548284564987,
+          "ece_10": 0.13888112451773188,
+          "macro_f1": 0.847626544994966,
+          "macro_f1_class_set": null,
+          "metric": "accuracy",
+          "nll": 1.8226548284564987,
+          "rows": 256,
+          "score": 0.85546875
+        }
+      },
+      "latency": {
+        "batched_scoring_seconds": 190.01429776940495,
+        "model_load_seconds": 12.159390126820654,
+        "warmed_single_row": {
+          "median_seconds": 0.07437579613178968,
+          "sample_rows": 7,
+          "scope": "warmed serial single-row forward plus Python/tokenization overhead",
+          "single_row_seconds": [
+            0.07627079216763377,
+            0.07871740497648716,
+            0.07437579613178968,
+            0.11460837675258517,
+            0.07200005697086453,
+            0.0727664208970964,
+            0.07210417510941625
+          ],
+          "warmup_rows": 1
+        }
+      },
+      "memory": {
+        "cuda_visible_devices": "4",
+        "device_name": "NVIDIA A100-SXM4-40GB",
+        "max_allocated_bytes": 24143391744
+      },
+      "test_rows": 3200
+    },
+    "full_provisional": {
+      "batched_rows_per_second": 16.849874273001323,
+      "batching_audit": {
+        "batched_correct": 126,
+        "changed_choices": 0,
+        "direct_correct": 126,
+        "max_abs_logit_difference": 4.968229293823242,
+        "rows": 128,
+        "sampling_seed": 20260924,
+        "scope": "Up to 128 fixed sampled rows; not a full single-request benchmark"
+      },
+      "family_metrics": {
+        "classification": {
+          "accuracy": 0.984375,
+          "brier_multiclass": 0.031094878593113037,
+          "cross_entropy": 0.12851050383401685,
+          "ece_10": 0.01515930366192253,
+          "macro_f1": 0.6728544719268043,
+          "macro_f1_class_set": [
+            "accept_reservations",
+            "account_blocked",
+            "alarm",
+            "application_status",
+            "apr",
+            "are_you_a_bot",
+            "balance",
+            "bill_balance",
+            "bill_due",
+            "book_flight",
+            "book_hotel",
+            "calculator",
+            "calendar",
+            "calendar_update",
+            "calories",
+            "cancel",
+            "cancel_reservation",
+            "car_rental",
+            "card_declined",
+            "carry_on",
+            "change_accent",
+            "change_ai_name",
+            "change_language",
+            "change_speed",
+            "change_user_name",
+            "change_volume",
+            "confirm_reservation",
+            "cook_time",
+            "credit_limit",
+            "credit_limit_change",
+            "credit_score",
+            "current_location",
+            "damaged_card",
+            "date",
+            "definition",
+            "direct_deposit",
+            "directions",
+            "distance",
+            "do_you_have_pets",
+            "exchange_rate",
+            "expiration_date",
+            "find_phone",
+            "flight_status",
+            "flip_coin",
+            "food_last",
+            "freeze_account",
+            "fun_fact",
+            "gas",
+            "gas_type",
+            "goodbye",
+            "greeting",
+            "how_busy",
+            "how_old_are_you",
+            "improve_credit_score",
+            "income",
+            "ingredient_substitution",
+            "ingredients_list",
+            "insurance",
+            "insurance_change",
+            "interest_rate",
+            "international_fees",
+            "international_visa",
+            "jump_start",
+            "last_maintenance",
+            "lost_luggage",
+            "make_call",
+            "maybe",
+            "meal_suggestion",
+            "meaning_of_life",
+            "measurement_conversion",
+            "meeting_schedule",
+            "min_payment",
+            "mpg",
+            "new_card",
+            "next_holiday",
+            "next_song",
+            "no",
+            "none_of_above",
+            "nutrition_info",
+            "oil_change_how",
+            "oil_change_when",
+            "order",
+            "order_checks",
+            "order_status",
+            "pay_bill",
+            "payday",
+            "pin_change",
+            "play_music",
+            "plug_type",
+            "pto_balance",
+            "pto_request",
+            "pto_request_status",
+            "pto_used",
+            "recipe",
+            "redeem_rewards",
+            "reminder",
+            "reminder_update",
+            "repeat",
+            "replacement_card_duration",
+            "report_fraud",
+            "report_lost_card",
+            "reset_settings",
+            "restaurant_reservation",
+            "restaurant_reviews",
+            "restaurant_suggestion",
+            "rewards_balance",
+            "roll_dice",
+            "rollover_401k",
+            "routing",
+            "schedule_maintenance",
+            "schedule_meeting",
+            "share_location",
+            "shopping_list",
+            "shopping_list_update",
+            "smart_home",
+            "spelling",
+            "spending_history",
+            "sync_device",
+            "taxes",
+            "tell_joke",
+            "text",
+            "thank_you",
+            "time",
+            "timer",
+            "timezone",
+            "tire_change",
+            "tire_pressure",
+            "todo_list",
+            "todo_list_update",
+            "traffic",
+            "transactions",
+            "transfer",
+            "translate",
+            "travel_alert",
+            "travel_notification",
+            "travel_suggestion",
+            "uber",
+            "update_playlist",
+            "user_name",
+            "vaccines",
+            "w2",
+            "weather",
+            "what_are_your_hobbies",
+            "what_can_i_ask_you",
+            "what_is_your_name",
+            "what_song",
+            "where_are_you_from",
+            "whisper_mode",
+            "who_do_you_work_for",
+            "who_made_you",
+            "yes"
+          ],
+          "metric": "macro_f1",
+          "nll": 0.12851050383401685,
+          "rows": 768,
+          "score": 0.6728544719268043
+        },
+        "cyber": {
+          "accuracy": 1.0,
+          "brier_multiclass": 7.039907085710297e-10,
+          "cross_entropy": 1.4056260139672094e-05,
+          "ece_10": 1.4055344832453187e-05,
+          "macro_f1": 1.0,
+          "macro_f1_class_set": null,
+          "metric": "accuracy",
+          "nll": 1.4056260139672094e-05,
+          "rows": 256,
+          "score": 1.0
+        },
+        "evidence_mnli": {
+          "accuracy": 0.89453125,
+          "brier_multiclass": 0.20007959768013817,
+          "cross_entropy": 0.47732028564053053,
+          "ece_10": 0.10014270698664655,
+          "macro_f1": 0.8960952866613244,
+          "macro_f1_class_set": [
+            "contradicted",
+            "insufficient",
+            "supported"
+          ],
+          "metric": "macro_f1",
+          "nll": 0.47732028564053053,
+          "rows": 256,
+          "score": 0.8960952866613244
+        },
+        "evidence_wanli": {
+          "accuracy": 0.7473958333333334,
+          "brier_multiclass": 0.4698223097551253,
+          "cross_entropy": 1.1823091658401002,
+          "ece_10": 0.22891620516262384,
+          "macro_f1": 0.7440915536538046,
+          "macro_f1_class_set": [
+            "contradicted",
+            "insufficient",
+            "supported"
+          ],
+          "metric": "macro_f1",
+          "nll": 1.1823091658401002,
+          "rows": 384,
+          "score": 0.7440915536538046
+        },
+        "menu": {
+          "accuracy": 1.0,
+          "brier_multiclass": 1.3295716399834894e-08,
+          "cross_entropy": 3.417302507410097e-05,
+          "ece_10": 3.416824696600429e-05,
+          "macro_f1": 1.0,
+          "macro_f1_class_set": null,
+          "metric": "accuracy",
+          "nll": 3.417302507410097e-05,
+          "rows": 1024,
+          "score": 1.0
+        },
+        "procedural": {
+          "accuracy": 1.0,
+          "brier_multiclass": 1.8871178214387957e-09,
+          "cross_entropy": 1.9066458433858458e-05,
+          "ece_10": 1.906762367942516e-05,
+          "macro_f1": 1.0,
+          "macro_f1_class_set": null,
+          "metric": "accuracy",
+          "nll": 1.9066458433858458e-05,
+          "rows": 256,
+          "score": 1.0
+        },
+        "uncertainty": {
+          "accuracy": 1.0,
+          "brier_multiclass": 7.790757409526681e-09,
+          "cross_entropy": 4.662313677725183e-05,
+          "ece_10": 4.662268748589771e-05,
+          "macro_f1": 1.0,
+          "macro_f1_class_set": null,
+          "metric": "accuracy",
+          "nll": 4.662313677725183e-05,
+          "rows": 256,
+          "score": 1.0
+        }
+      },
+      "latency": {
+        "batched_scoring_seconds": 189.9123962679878,
+        "model_load_seconds": 12.889793228823692,
+        "warmed_single_row": {
+          "median_seconds": 0.07503103883937001,
+          "sample_rows": 7,
+          "scope": "warmed serial single-row forward plus Python/tokenization overhead",
+          "single_row_seconds": [
+            0.07649229280650616,
+            0.08017300721257925,
+            0.07503103883937001,
+            0.11526762787252665,
+            0.07288371445611119,
+            0.07439831830561161,
+            0.07422980898991227
+          ],
+          "warmup_rows": 1
+        }
+      },
+      "memory": {
+        "cuda_visible_devices": "4",
+        "device_name": "NVIDIA A100-SXM4-40GB",
+        "max_allocated_bytes": 24143391744
+      },
+      "test_rows": 3200
+    },
+    "prior_lora": {
+      "batched_rows_per_second": 14.598521169320206,
+      "batching_audit": {
+        "batched_correct": 124,
+        "changed_choices": 1,
+        "direct_correct": 125,
+        "max_abs_logit_difference": 27.847183600068092,
+        "rows": 128,
+        "sampling_seed": 20260924,
+        "scope": "Up to 128 fixed sampled rows; not a full single-request benchmark"
+      },
+      "family_metrics": {
+        "classification": {
+          "accuracy": 0.9739583333333334,
+          "brier_multiclass": 0.04486906483211384,
+          "cross_entropy": 0.13581261063802397,
+          "ece_10": 0.01902674213313145,
+          "macro_f1": 0.6638160617178547,
+          "macro_f1_class_set": [
+            "accept_reservations",
+            "account_blocked",
+            "alarm",
+            "application_status",
+            "apr",
+            "are_you_a_bot",
+            "balance",
+            "bill_balance",
+            "bill_due",
+            "book_flight",
+            "book_hotel",
+            "calculator",
+            "calendar",
+            "calendar_update",
+            "calories",
+            "cancel",
+            "cancel_reservation",
+            "car_rental",
+            "card_declined",
+            "carry_on",
+            "change_accent",
+            "change_ai_name",
+            "change_language",
+            "change_speed",
+            "change_user_name",
+            "change_volume",
+            "confirm_reservation",
+            "cook_time",
+            "credit_limit",
+            "credit_limit_change",
+            "credit_score",
+            "current_location",
+            "damaged_card",
+            "date",
+            "definition",
+            "direct_deposit",
+            "directions",
+            "distance",
+            "do_you_have_pets",
+            "exchange_rate",
+            "expiration_date",
+            "find_phone",
+            "flight_status",
+            "flip_coin",
+            "food_last",
+            "freeze_account",
+            "fun_fact",
+            "gas",
+            "gas_type",
+            "goodbye",
+            "greeting",
+            "how_busy",
+            "how_old_are_you",
+            "improve_credit_score",
+            "income",
+            "ingredient_substitution",
+            "ingredients_list",
+            "insurance",
+            "insurance_change",
+            "interest_rate",
+            "international_fees",
+            "international_visa",
+            "jump_start",
+            "last_maintenance",
+            "lost_luggage",
+            "make_call",
+            "maybe",
+            "meal_suggestion",
+            "meaning_of_life",
+            "measurement_conversion",
+            "meeting_schedule",
+            "min_payment",
+            "mpg",
+            "new_card",
+            "next_holiday",
+            "next_song",
+            "no",
+            "none_of_above",
+            "nutrition_info",
+            "oil_change_how",
+            "oil_change_when",
+            "order",
+            "order_checks",
+            "order_status",
+            "pay_bill",
+            "payday",
+            "pin_change",
+            "play_music",
+            "plug_type",
+            "pto_balance",
+            "pto_request",
+            "pto_request_status",
+            "pto_used",
+            "recipe",
+            "redeem_rewards",
+            "reminder",
+            "reminder_update",
+            "repeat",
+            "replacement_card_duration",
+            "report_fraud",
+            "report_lost_card",
+            "reset_settings",
+            "restaurant_reservation",
+            "restaurant_reviews",
+            "restaurant_suggestion",
+            "rewards_balance",
+            "roll_dice",
+            "rollover_401k",
+            "routing",
+            "schedule_maintenance",
+            "schedule_meeting",
+            "share_location",
+            "shopping_list",
+            "shopping_list_update",
+            "smart_home",
+            "spelling",
+            "spending_history",
+            "sync_device",
+            "taxes",
+            "tell_joke",
+            "text",
+            "thank_you",
+            "time",
+            "timer",
+            "timezone",
+            "tire_change",
+            "tire_pressure",
+            "todo_list",
+            "todo_list_update",
+            "traffic",
+            "transactions",
+            "transfer",
+            "translate",
+            "travel_alert",
+            "travel_notification",
+            "travel_suggestion",
+            "uber",
+            "update_playlist",
+            "user_name",
+            "vaccines",
+            "w2",
+            "weather",
+            "what_are_your_hobbies",
+            "what_can_i_ask_you",
+            "what_is_your_name",
+            "what_song",
+            "where_are_you_from",
+            "whisper_mode",
+            "who_do_you_work_for",
+            "who_made_you",
+            "yes"
+          ],
+          "metric": "macro_f1",
+          "nll": 0.13581261063802397,
+          "rows": 768,
+          "score": 0.6638160617178547
+        },
+        "cyber": {
+          "accuracy": 0.98046875,
+          "brier_multiclass": 0.023854450573102575,
+          "cross_entropy": 0.04348337037113295,
+          "ece_10": 0.010799251740307929,
+          "macro_f1": 0.9804351920263086,
+          "macro_f1_class_set": null,
+          "metric": "accuracy",
+          "nll": 0.04348337037113295,
+          "rows": 256,
+          "score": 0.98046875
+        },
+        "evidence_mnli": {
+          "accuracy": 0.90625,
+          "brier_multiclass": 0.16645126827791096,
+          "cross_entropy": 0.3599705737749123,
+          "ece_10": 0.066558210277174,
+          "macro_f1": 0.9066480173258391,
+          "macro_f1_class_set": [
+            "contradicted",
+            "insufficient",
+            "supported"
+          ],
+          "metric": "macro_f1",
+          "nll": 0.3599705737749123,
+          "rows": 256,
+          "score": 0.9066480173258391
+        },
+        "evidence_wanli": {
+          "accuracy": 0.78125,
+          "brier_multiclass": 0.3516103939205001,
+          "cross_entropy": 0.8254033806553056,
+          "ece_10": 0.1487838997838723,
+          "macro_f1": 0.7700716845878136,
+          "macro_f1_class_set": [
+            "contradicted",
+            "insufficient",
+            "supported"
+          ],
+          "metric": "macro_f1",
+          "nll": 0.8254033806553056,
+          "rows": 384,
+          "score": 0.7700716845878136
+        },
+        "menu": {
+          "accuracy": 0.9931640625,
+          "brier_multiclass": 0.007038716528843744,
+          "cross_entropy": 0.01756629957482851,
+          "ece_10": 0.0030170665757557,
+          "macro_f1": 0.9952818137412706,
+          "macro_f1_class_set": null,
+          "metric": "accuracy",
+          "nll": 0.01756629957482851,
+          "rows": 1024,
+          "score": 0.9931640625
+        },
+        "procedural": {
+          "accuracy": 0.9921875,
+          "brier_multiclass": 0.007966493617892778,
+          "cross_entropy": 0.014082305824298424,
+          "ece_10": 0.006824686117289827,
+          "macro_f1": 0.9921556460193516,
+          "macro_f1_class_set": null,
+          "metric": "accuracy",
+          "nll": 0.014082305824298424,
+          "rows": 256,
+          "score": 0.9921875
+        },
+        "uncertainty": {
+          "accuracy": 1.0,
+          "brier_multiclass": 0.0001695123670711556,
+          "cross_entropy": 0.00228413281611628,
+          "ece_10": 0.0022367148144725084,
+          "macro_f1": 1.0,
+          "macro_f1_class_set": null,
+          "metric": "accuracy",
+          "nll": 0.00228413281611628,
+          "rows": 256,
+          "score": 1.0
+        }
+      },
+      "latency": {
+        "batched_scoring_seconds": 219.20028493879363,
+        "model_load_seconds": 13.769176671747118,
+        "warmed_single_row": {
+          "median_seconds": 0.10636085504665971,
+          "sample_rows": 7,
+          "scope": "warmed serial single-row forward plus Python/tokenization overhead",
+          "single_row_seconds": [
+            0.10779059771448374,
+            0.10640386678278446,
+            0.10430879984050989,
+            0.13362717907875776,
+            0.1045983200892806,
+            0.10523886606097221,
+            0.10636085504665971
+          ],
+          "warmup_rows": 1
+        }
+      },
+      "memory": {
+        "cuda_visible_devices": "4",
+        "device_name": "NVIDIA A100-SXM4-40GB",
+        "max_allocated_bytes": 24236624896
+      },
+      "test_rows": 3200
+    }
+  },
+  "base_model": "google/gemma-4-12B-it",
+  "base_revision": "707f0a3b8a3c7ad586ed01e27eafbad8a27dd0f7",
+  "bootstrap_replicates": 1000,
+  "bootstrap_seed": 20260924,
+  "comparison_source_sha256": "f8229fb201d5946b18cf1c7fa3c191660f5668ed36a89551096efe4ab9988030",
+  "families": [
+    {
+      "descriptive_accuracy_by_evaluation_slice": {
+        "out_of_scope": {
+          "accuracy_by_variant": {
+            "frozen": 0.98046875,
+            "full_provisional": 1.0,
+            "prior_lora": 0.98828125
+          },
+          "rows": 256
+        },
+        "seen_label": {
+          "accuracy_by_variant": {
+            "frozen": 0.921875,
+            "full_provisional": 0.96875,
+            "prior_lora": 0.95703125
+          },
+          "rows": 256
+        },
+        "synthetic_absent_gold": {
+          "accuracy_by_variant": {
+            "frozen": 0.9375,
+            "full_provisional": 0.984375,
+            "prior_lora": 0.9765625
+          },
+          "rows": 256
+        }
+      },
+      "family": "classification",
+      "full_minus_frozen": {
+        "bootstrap_unit": "source_group_id",
+        "percentile_95_ci": [
+          0.022940175411006125,
+          0.057910368550201596
+        ],
+        "replicates": 1000,
+        "score_delta": 0.050758083702640344
+      },
+      "full_minus_prior_lora": {
+        "bootstrap_unit": "source_group_id",
+        "percentile_95_ci": [
+          -0.003711719777393707,
+          0.021660409977545703
+        ],
+        "replicates": 1000,
+        "score_delta": 0.009038410208949577
+      },
+      "label_support": {
+        "gold_labels": 105,
+        "gold_none_of_above_rows": 512,
+        "offered_labels": 151,
+        "offered_labels_absent_from_gold": 46,
+        "predicted_labels": {
+          "frozen": 107,
+          "full_provisional": 105,
+          "prior_lora": 108
+        }
+      },
+      "rows": 768,
+      "selection_metric": "macro_f1",
+      "source_groups": 512,
+      "variants": {
+        "frozen": {
+          "accuracy": 0.9466145833333334,
+          "macro_f1": 0.6220963882241639,
+          "primary_score": 0.6220963882241639
+        },
+        "full_provisional": {
+          "accuracy": 0.984375,
+          "macro_f1": 0.6728544719268043,
+          "primary_score": 0.6728544719268043
+        },
+        "prior_lora": {
+          "accuracy": 0.9739583333333334,
+          "macro_f1": 0.6638160617178547,
+          "primary_score": 0.6638160617178547
+        }
+      }
+    },
+    {
+      "descriptive_accuracy_by_evaluation_slice": {
+        "authored_template_and_operator_holdout": {
+          "accuracy_by_variant": {
+            "frozen": 0.83984375,
+            "full_provisional": 1.0,
+            "prior_lora": 0.98046875
+          },
+          "rows": 256
+        }
+      },
+      "family": "cyber",
+      "full_minus_frozen": {
+        "bootstrap_unit": "source_group_id",
+        "percentile_95_ci": [
+          0.1171875,
+          0.203125
+        ],
+        "replicates": 1000,
+        "score_delta": 0.16015625
+      },
+      "full_minus_prior_lora": {
+        "bootstrap_unit": "source_group_id",
+        "percentile_95_ci": [
+          0.00390625,
+          0.0390625
+        ],
+        "replicates": 1000,
+        "score_delta": 0.01953125
+      },
+      "label_support": {
+        "gold_labels": 3,
+        "gold_none_of_above_rows": 0,
+        "offered_labels": 3,
+        "offered_labels_absent_from_gold": 0,
+        "predicted_labels": {
+          "frozen": 3,
+          "full_provisional": 3,
+          "prior_lora": 3
+        }
+      },
+      "rows": 256,
+      "selection_metric": "accuracy",
+      "source_groups": 256,
+      "variants": {
+        "frozen": {
+          "accuracy": 0.83984375,
+          "macro_f1": 0.8320014595876666,
+          "primary_score": 0.83984375
+        },
+        "full_provisional": {
+          "accuracy": 1.0,
+          "macro_f1": 1.0,
+          "primary_score": 1.0
+        },
+        "prior_lora": {
+          "accuracy": 0.98046875,
+          "macro_f1": 0.9804351920263086,
+          "primary_score": 0.98046875
+        }
+      }
+    },
+    {
+      "descriptive_accuracy_by_evaluation_slice": {
+        "fresh_group_holdout": {
+          "accuracy_by_variant": {
+            "frozen": 0.765625,
+            "full_provisional": 0.89453125,
+            "prior_lora": 0.90625
+          },
+          "rows": 256
+        }
+      },
+      "family": "evidence_mnli",
+      "full_minus_frozen": {
+        "bootstrap_unit": "source_group_id",
+        "percentile_95_ci": [
+          0.077181893309209,
+          0.17869690695777662
+        ],
+        "replicates": 1000,
+        "score_delta": 0.1299756399796168
+      },
+      "full_minus_prior_lora": {
+        "bootstrap_unit": "source_group_id",
+        "percentile_95_ci": [
+          -0.04099964311417936,
+          0.02069066070568082
+        ],
+        "replicates": 1000,
+        "score_delta": -0.010552730664514676
+      },
+      "label_support": {
+        "gold_labels": 3,
+        "gold_none_of_above_rows": 0,
+        "offered_labels": 3,
+        "offered_labels_absent_from_gold": 0,
+        "predicted_labels": {
+          "frozen": 3,
+          "full_provisional": 3,
+          "prior_lora": 3
+        }
+      },
+      "rows": 256,
+      "selection_metric": "macro_f1",
+      "source_groups": 83,
+      "variants": {
+        "frozen": {
+          "accuracy": 0.765625,
+          "macro_f1": 0.7661196466817076,
+          "primary_score": 0.7661196466817076
+        },
+        "full_provisional": {
+          "accuracy": 0.89453125,
+          "macro_f1": 0.8960952866613244,
+          "primary_score": 0.8960952866613244
+        },
+        "prior_lora": {
+          "accuracy": 0.90625,
+          "macro_f1": 0.9066480173258391,
+          "primary_score": 0.9066480173258391
+        }
+      }
+    },
+    {
+      "descriptive_accuracy_by_evaluation_slice": {
+        "internal_group_holdout": {
+          "accuracy_by_variant": {
+            "frozen": 0.6979166666666666,
+            "full_provisional": 0.7473958333333334,
+            "prior_lora": 0.78125
+          },
+          "rows": 384
+        }
+      },
+      "family": "evidence_wanli",
+      "full_minus_frozen": {
+        "bootstrap_unit": "source_group_id",
+        "percentile_95_ci": [
+          0.020579984408674257,
+          0.12679975849397718
+        ],
+        "replicates": 1000,
+        "score_delta": 0.0716858533820881
+      },
+      "full_minus_prior_lora": {
+        "bootstrap_unit": "source_group_id",
+        "percentile_95_ci": [
+          -0.06265578998386623,
+          0.011240416182745072
+        ],
+        "replicates": 1000,
+        "score_delta": -0.02598013093400897
+      },
+      "label_support": {
+        "gold_labels": 3,
+        "gold_none_of_above_rows": 0,
+        "offered_labels": 3,
+        "offered_labels_absent_from_gold": 0,
+        "predicted_labels": {
+          "frozen": 3,
+          "full_provisional": 3,
+          "prior_lora": 3
+        }
+      },
+      "rows": 384,
+      "selection_metric": "macro_f1",
+      "source_groups": 384,
+      "variants": {
+        "frozen": {
+          "accuracy": 0.6979166666666666,
+          "macro_f1": 0.6724057002717165,
+          "primary_score": 0.6724057002717165
+        },
+        "full_provisional": {
+          "accuracy": 0.7473958333333334,
+          "macro_f1": 0.7440915536538046,
+          "primary_score": 0.7440915536538046
+        },
+        "prior_lora": {
+          "accuracy": 0.78125,
+          "macro_f1": 0.7700716845878136,
+          "primary_score": 0.7700716845878136
+        }
+      }
+    },
+    {
+      "descriptive_accuracy_by_evaluation_slice": {
+        "absent_gold": {
+          "accuracy_by_variant": {
+            "frozen": 1.0,
+            "full_provisional": 1.0,
+            "prior_lora": 1.0
+          },
+          "rows": 512
+        },
+        "present_gold": {
+          "accuracy_by_variant": {
+            "frozen": 0.986328125,
+            "full_provisional": 1.0,
+            "prior_lora": 0.986328125
+          },
+          "rows": 512
+        }
+      },
+      "family": "menu",
+      "full_minus_frozen": {
+        "bootstrap_unit": "source_group_id",
+        "percentile_95_ci": [
+          0.001953125,
+          0.01171875
+        ],
+        "replicates": 1000,
+        "score_delta": 0.0068359375
+      },
+      "full_minus_prior_lora": {
+        "bootstrap_unit": "source_group_id",
+        "percentile_95_ci": [
+          0.0029296875,
+          0.0126953125
+        ],
+        "replicates": 1000,
+        "score_delta": 0.0068359375
+      },
+      "label_support": {
+        "gold_labels": 16,
+        "gold_none_of_above_rows": 0,
+        "offered_labels": 16,
+        "offered_labels_absent_from_gold": 0,
+        "predicted_labels": {
+          "frozen": 16,
+          "full_provisional": 16,
+          "prior_lora": 16
+        }
+      },
+      "rows": 1024,
+      "selection_metric": "accuracy",
+      "source_groups": 1024,
+      "variants": {
+        "frozen": {
+          "accuracy": 0.9931640625,
+          "macro_f1": 0.9952818137412706,
+          "primary_score": 0.9931640625
+        },
+        "full_provisional": {
+          "accuracy": 1.0,
+          "macro_f1": 1.0,
+          "primary_score": 1.0
+        },
+        "prior_lora": {
+          "accuracy": 0.9931640625,
+          "macro_f1": 0.9952818137412706,
+          "primary_score": 0.9931640625
+        }
+      }
+    },
+    {
+      "descriptive_accuracy_by_evaluation_slice": {
+        "authored_template_and_operator_holdout": {
+          "accuracy_by_variant": {
+            "frozen": 0.91015625,
+            "full_provisional": 1.0,
+            "prior_lora": 0.9921875
+          },
+          "rows": 256
+        }
+      },
+      "family": "procedural",
+      "full_minus_frozen": {
+        "bootstrap_unit": "source_group_id",
+        "percentile_95_ci": [
+          0.0546875,
+          0.125
+        ],
+        "replicates": 1000,
+        "score_delta": 0.08984375
+      },
+      "full_minus_prior_lora": {
+        "bootstrap_unit": "source_group_id",
+        "percentile_95_ci": [
+          0.0,
+          0.01953125
+        ],
+        "replicates": 1000,
+        "score_delta": 0.0078125
+      },
+      "label_support": {
+        "gold_labels": 3,
+        "gold_none_of_above_rows": 0,
+        "offered_labels": 3,
+        "offered_labels_absent_from_gold": 0,
+        "predicted_labels": {
+          "frozen": 3,
+          "full_provisional": 3,
+          "prior_lora": 3
+        }
+      },
+      "rows": 256,
+      "selection_metric": "accuracy",
+      "source_groups": 256,
+      "variants": {
+        "frozen": {
+          "accuracy": 0.91015625,
+          "macro_f1": 0.9104752497408923,
+          "primary_score": 0.91015625
+        },
+        "full_provisional": {
+          "accuracy": 1.0,
+          "macro_f1": 1.0,
+          "primary_score": 1.0
+        },
+        "prior_lora": {
+          "accuracy": 0.9921875,
+          "macro_f1": 0.9921556460193516,
+          "primary_score": 0.9921875
+        }
+      }
+    },
+    {
+      "descriptive_accuracy_by_evaluation_slice": {
+        "authored_template_and_operator_holdout": {
+          "accuracy_by_variant": {
+            "frozen": 0.85546875,
+            "full_provisional": 1.0,
+            "prior_lora": 1.0
+          },
+          "rows": 256
+        }
+      },
+      "family": "uncertainty",
+      "full_minus_frozen": {
+        "bootstrap_unit": "source_group_id",
+        "percentile_95_ci": [
+          0.10546875,
+          0.19140625
+        ],
+        "replicates": 1000,
+        "score_delta": 0.14453125
+      },
+      "full_minus_prior_lora": {
+        "bootstrap_unit": "source_group_id",
+        "percentile_95_ci": [
+          0.0,
+          0.0
+        ],
+        "replicates": 1000,
+        "score_delta": 0.0
+      },
+      "label_support": {
+        "gold_labels": 3,
+        "gold_none_of_above_rows": 0,
+        "offered_labels": 3,
+        "offered_labels_absent_from_gold": 0,
+        "predicted_labels": {
+          "frozen": 3,
+          "full_provisional": 3,
+          "prior_lora": 3
+        }
+      },
+      "rows": 256,
+      "selection_metric": "accuracy",
+      "source_groups": 256,
+      "variants": {
+        "frozen": {
+          "accuracy": 0.85546875,
+          "macro_f1": 0.847626544994966,
+          "primary_score": 0.85546875
+        },
+        "full_provisional": {
+          "accuracy": 1.0,
+          "macro_f1": 1.0,
+          "primary_score": 1.0
+        },
+        "prior_lora": {
+          "accuracy": 1.0,
+          "macro_f1": 1.0,
+          "primary_score": 1.0
+        }
+      }
+    }
+  ],
+  "schema": "openjev-full-weight-seed42-heldout-report-v1",
+  "scope": "provisional_single_seed_heldout",
+  "selected_step": 3200,
+  "serialization_proof": {
+    "original_h200_reference_0_05_passed": false,
+    "original_h200_to_a100_max_abs_logit_difference": 0.3659782409667969,
+    "same_a100_bf16_roundtrip_changed_choices": 0,
+    "same_a100_bf16_roundtrip_max_abs_logit_difference": 0.0,
+    "validation_proof_sha256": "9d03f12657220545e4284ebb122c4d90bc4fb6e53047a804cf2d9b7c63281439"
+  },
+  "slice_scope": {
+    "classification_unseen_label_slice_present": false,
+    "cyber_slices_are_authored_or_synthetic_not_real_network_validation": true,
+    "slice_accuracy_is_descriptive_not_primary_or_bootstrapped": true
+  },
+  "source_receipts_sha256": {
+    "frozen": "3f57927f4a4b47d4bdf818d01ebabf96136aa261b4dd81eee29e842369dafff4",
+    "full_provisional": "b2fa568723bdfb52beef24eff0f1375d381ae6fe7bd557893278f2ddbc0fea66",
+    "prior_lora": "30e2ba249f440c0cbbc747b98e96e622d7affe54d1d1557138461a8ce6c782ca"
+  },
+  "source_rows_sha256": {
+    "frozen": "e9582c4d2f0bbbc11d4631e4ff19421eed7accc5211c1d84744c5e416635daff",
+    "full_provisional": "d1af0b8959e87b1b31b688ec6e7539997f6ee0dae887ddbe555de3ed2491aa7f",
+    "prior_lora": "556d21eef77b272cf9b3eda4880b10bd2568555c1405d5ccb525315d7a4ec0d4"
+  },
+  "test_sha256": "0fc55bbb933d77c0e8b2ef8d4825444f6a839a78c501d3c6d3257bd74bf97f64",
+  "two_seed_selection_complete": false
+}

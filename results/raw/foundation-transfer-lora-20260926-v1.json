@@ -1,0 +1,22 @@
+{
+  "data_manifest_sha256": "29e9bf0fe15e0249b7bf9334b0a36c484cf643c80d44332f5f1330e1fede0bbf",
+  "evidence_package": "results/worthify/foundation-transfer-lora-20260926-v1",
+  "limitations": "One test scenario cannot estimate scenario-level uncertainty; conditional option scores are uncalibrated.",
+  "paired_rows_sha256": "5fa2f0c1e78bd4e4d331cb2fc4cc3ee4c76a61635fbe200fe6237ffd23ab4de4",
+  "protocol_sha256": "d7485e147cf02d2f975f74e76dfc4d33516add567eb347b199643866d1d23d1b",
+  "report_sha256": "73408a7bc1cdd7acce73f7c61adc866933436b8db9f275a4f1006387de378f05",
+  "schema": "openjev-ctu13-foundation-transfer-evidence-v1-aggregate",
+  "selected_pair_correctness": {
+    "both_correct": 41,
+    "both_wrong": 210,
+    "raw_only_correct": 147,
+    "tuned_only_correct": 9
+  },
+  "selected_seed_by_arm": {
+    "raw": 43,
+    "tuned": 43
+  },
+  "selected_test_macro_f1_delta_tuned_minus_raw": -0.3164603030614407,
+  "test_rows": 407,
+  "test_sha256": "1fe44cac0a212612d76f52f6802be6b426aff9b77dca333908469323426b4022"
+}

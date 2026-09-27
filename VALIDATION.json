@@ -1,0 +1,32 @@
+{
+  "schema": "worthify-curated-validation-v1",
+  "date": "2026-09-27",
+  "status": "local-review-candidate",
+  "source_revision": "f95abfd80e842ef1b045cac2a15c389f7a4b4112",
+  "installation": {
+    "editable_install": "passed",
+    "extras": [
+      "test",
+      "train",
+      "charts"
+    ],
+    "dependency_acquisition": "Existing exact pinned dependencies reused in a separate virtual environment after package-index DNS failed. Fresh network installation remains unverified."
+  },
+  "checks": {
+    "pytest_passed": 58,
+    "pytest_warnings": "Two upstream SWIG deprecations",
+    "cli_help": "passed",
+    "raw_checksums": "passed",
+    "upstream_summary_claims": 69,
+    "decision_1_evidence": "passed: two task studies, seed metrics, paired outcomes, BANKING77 sensitivity/bootstrap/curves, 21 full-weight family headline scores",
+    "source_git_blob_hashes": "All copied/adapted input hashes match immutable source commit",
+    "snapshot_inventory_and_relative_links": "passed",
+    "chart_regeneration": "passed; all three chart bytes exactly match source artifacts"
+  },
+  "limits": [
+    "No new GPU training or inference performed for this curated snapshot; runtime source files are byte-identical to their recorded source revision.",
+    "Private HF model/media and adapter links require reviewer authorization.",
+    "Four-epoch BANKING77 results remain pending and are not represented by this snapshot.",
+    "No remote push or public release."
+  ]
+}

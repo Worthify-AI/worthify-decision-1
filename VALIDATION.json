@@ -16,6 +16,7 @@
     "pytest_passed": 58,
     "pytest_warnings": "Two upstream SWIG deprecations",
     "cli_help": "passed",
+    "authored_gpu_smoke": "passed: one visible RTX 3090; train on 4 authored rows, fresh adapter reload/validation on 2 rows, and separate evaluation on 2 test rows against private Decision-1 commit cab55818cfb6f4163f2b2597bed31cceb6ba2030. This is a workflow check, not a benchmark.",
     "raw_checksums": "passed",
     "upstream_summary_claims": 69,
     "decision_1_evidence": "passed: two task studies, seed metrics, paired outcomes, BANKING77 sensitivity/bootstrap/curves, 21 full-weight family headline scores",
@@ -24,9 +25,10 @@
     "chart_regeneration": "passed; all three chart bytes exactly match source artifacts"
   },
   "limits": [
-    "No new GPU training or inference performed for this curated snapshot; runtime source files are byte-identical to their recorded source revision.",
+    "Runtime source files are byte-identical to their recorded source revision; the authored GPU smoke does not estimate model quality.",
     "Private HF model/media and adapter links require reviewer authorization.",
     "Four-epoch BANKING77 results remain pending and are not represented by this snapshot.",
-    "No remote push or public release."
+    "The candidate was pushed to a new private GitHub repository with clean history; no public release occurred.",
+    "The private GitHub Actions run ended with startup_failure and no jobs, so hosted CI remains unverified; local checks passed."
   ]
 }

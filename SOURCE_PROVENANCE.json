@@ -8,13 +8,24 @@
       "repo": "Worthify/worthify-decision-1-banking77-lora-preview",
       "revision": "271f72502162b3b408b26dd826a6ca441937bbbb"
     },
-    "video_posters": {
+    "branded_media": {
       "repo": "Worthify/Decision-1",
-      "revision": "9d832aa4940e4be201008b470ba5790dfe01e402"
+      "revision": "e5c7947303118e0e76e122306175d806dfc2dad1",
+      "path": "media/brand-v1/",
+      "artifacts": [
+        "evidence.mp4",
+        "evidence-poster.png",
+        "traffic.mp4",
+        "traffic-poster.png",
+        "tetris.mp4",
+        "tetris-poster.png",
+        "provenance.json"
+      ]
     },
-    "videos": {
+    "hub_model_card": {
       "repo": "Worthify/Decision-1",
-      "revision": "48acdb76db1d73e0f481b1e2079e7289db0621cc"
+      "revision": "9a9de18a9bc7ae839bf693e9c399b37737af6254",
+      "path": "README.md"
     }
   },
   "files": {
@@ -33,20 +44,11 @@
       "source_sha256": "0d3ae2fb460d5ffb9ae6f63a25c7cc8bf5d41eb3b79c3685873435e37ec0b659"
     },
     "MODEL_CARD.md": {
-      "additional_source_inputs": [
-        {
-          "purpose": "Three video poster attributes; video source revisions unchanged",
-          "source_git_blob": "065ecf84a28921d761cc260990d5d3eb6daac382",
-          "source_path": "docs/model-card-v2-hf-review.md",
-          "source_revision": "88cc6c9eb07429d988ebacd086f19cf854380310",
-          "source_sha256": "c62ddabab62b212d8a2bd2052ba250150307e5783ce393f993ed1a7941dd01e4"
-        }
-      ],
       "relationship": "adapted for curated distribution",
-      "source_git_blob": "423d4e0b09c2251514951fd4fbb883d05f7e230b",
+      "source_git_blob": "0f07fdc39a82f5f901008e80fbb3b61a037dee3f",
       "source_path": "docs/model-card-v2-hf-review.md",
-      "source_revision": "f95abfd80e842ef1b045cac2a15c389f7a4b4112",
-      "source_sha256": "fb75bd2c80ba0bf2859cd77f04a874987c9a6c27d55354b0975aee55a848feac"
+      "source_revision": "37507ca9e795a293953565aaf94a0aefaef005be",
+      "source_sha256": "f6d2c4ec5e52b0b048ef3563c7bea0812555eee734646654259e83153f546b2d"
     },
     "THIRD_PARTY_WORTHIFY.md": {
       "relationship": "adapted for curated distribution",
@@ -472,10 +474,10 @@
     "AGENTS.md": "16c0341ee6c02751a1533224ab13b66194a24836b60ce1b0b0a65fd9d90cb12c",
     "LICENSE": "f765f2140f8507a8f0d81ec0fd2c4bd72fe6a066841ef27883ff876a76bf61be",
     "LICENSES/Apache-2.0.txt": "0d3ae2fb460d5ffb9ae6f63a25c7cc8bf5d41eb3b79c3685873435e37ec0b659",
-    "MODEL_CARD.md": "f3d004f12bb6a45fe660df4f61e51c6daefb4e63927169050e5f6059486cefab",
+    "MODEL_CARD.md": "6b166705f85df710add53dde0c6b19a9f37e7be656431e403bc1069b8ee0f9cb",
     "README.md": "d0a768f43927d04d36adcc9e9fd8f5cf1764e43d27f08b714125b35794b31398",
     "THIRD_PARTY_WORTHIFY.md": "ac1aebfd121f5973ae85f01c8225d68f837d9b158698459ec2160bdb2f450a20",
-    "VALIDATION.json": "eb413fc1f9665fade68e1a891ce79e996dd44855c9ba1868a2759a3390f74cde",
+    "VALIDATION.json": "84fd05cea91cf1b6b4ad5a8b42617e562f6dea535afe2afe11faa2da11c6baa2",
     "benchmarks/render_decision_1_charts.py": "52a955743c6c34364fe70337bcd346974fe8798e8c33686020910ecb3b3e9fb4",
     "benchmarks/verify_decision_1.py": "6f0494fd0df705e6ca88088827b501e821fdef9386a261c2d9950d2e8a9d857c",
     "benchmarks/verify_published.py": "b6d9681235db3468e929ee4f19cc2631fe0476140e5704bdf38b48498075f6d9",
@@ -542,7 +544,7 @@
     "tests/test_training.py": "28c2848e2b0223e34cabea0160335cc11dcc02df735e06250e0b5dcd11cdc125"
   },
   "source_repository": "Worthify/worthify-open-jev",
-  "source_revision": "17902679141a4dabb025e6431697f9eff0ec7018",
+  "source_revision": "dd7d3d3e060e8dd3f2d408a1b05b1cbc33db42ce",
   "source_revision_note": "Latest integrated research-source revision; each copied/adapted file records its original immutable source revision and hashes.",
   "upstream_repository": "https://github.com/bonsai/openjev",
   "upstream_revision": "53e3028363509f8533d90fe82d983770da1f6c02"

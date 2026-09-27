@@ -39,7 +39,7 @@ inventory record lead it to `supported`. In the complete six-stage authored repl
 it matched four expected routes and missed two. This is a demonstration of the
 interface, not an accuracy benchmark.
 
-<video controls playsinline preload="metadata" width="100%" poster="https://huggingface.co/Worthify/Decision-1/resolve/9d832aa4940e4be201008b470ba5790dfe01e402/media/evidence-poster.png" src="https://huggingface.co/Worthify/Decision-1/resolve/48acdb76db1d73e0f481b1e2079e7289db0621cc/media/evidence.mp4"></video>
+<video controls playsinline preload="metadata" width="100%" poster="https://huggingface.co/Worthify/Decision-1/resolve/e5c7947303118e0e76e122306175d806dfc2dad1/media/brand-v1/evidence-poster.png" src="https://huggingface.co/Worthify/Decision-1/resolve/e5c7947303118e0e76e122306175d806dfc2dad1/media/brand-v1/evidence.mp4"></video>
 
 **The same menu handles traffic shape.** In a synthetic window of small, roughly
 periodic outbound records, the model chooses `beacon_like` from descriptions of
@@ -47,7 +47,7 @@ observable patterns. It sees connection metadata, not packet payloads. Four of s
 authored windows matched their expected route. The label makes no claim about
 malicious intent.
 
-<video controls playsinline preload="metadata" width="100%" poster="https://huggingface.co/Worthify/Decision-1/resolve/9d832aa4940e4be201008b470ba5790dfe01e402/media/traffic-poster.png" src="https://huggingface.co/Worthify/Decision-1/resolve/48acdb76db1d73e0f481b1e2079e7289db0621cc/media/traffic.mp4"></video>
+<video controls playsinline preload="metadata" width="100%" poster="https://huggingface.co/Worthify/Decision-1/resolve/e5c7947303118e0e76e122306175d806dfc2dad1/media/brand-v1/traffic-poster.png" src="https://huggingface.co/Worthify/Decision-1/resolve/e5c7947303118e0e76e122306175d806dfc2dad1/media/brand-v1/traffic.mp4"></video>
 
 **A text-state game keeps moving.** In one falling-block run, code supplied legal
 placements and board features as text. The same full-weight model selected placement
@@ -55,7 +55,12 @@ goals and buttons for 30 pieces, cleared six lines, and applied 25 rotations whi
 gravity advanced. This single seed has no raw-Gemma control and is not a gameplay
 benchmark. The model did not see pixels.
 
-<video controls playsinline preload="metadata" width="100%" poster="https://huggingface.co/Worthify/Decision-1/resolve/9d832aa4940e4be201008b470ba5790dfe01e402/media/tetris-poster.png" src="https://huggingface.co/Worthify/Decision-1/resolve/48acdb76db1d73e0f481b1e2079e7289db0621cc/media/tetris.mp4"></video>
+<video controls playsinline preload="metadata" width="100%" poster="https://huggingface.co/Worthify/Decision-1/resolve/e5c7947303118e0e76e122306175d806dfc2dad1/media/brand-v1/tetris-poster.png" src="https://huggingface.co/Worthify/Decision-1/resolve/e5c7947303118e0e76e122306175d806dfc2dad1/media/brand-v1/tetris.mp4"></video>
+
+These are silent, editorial replays of recorded traces. The on-screen inference
+times are measured; video frame rate is not model throughput. The
+[media receipt](https://huggingface.co/Worthify/Decision-1/resolve/e5c7947303118e0e76e122306175d806dfc2dad1/media/brand-v1/provenance.json)
+binds the videos to their source traces and records the styling assets.
 
 ## Does it make a better base for your LoRA?
 

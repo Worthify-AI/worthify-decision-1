@@ -2,7 +2,7 @@
   "schema": "worthify-curated-validation-v1",
   "date": "2026-09-27",
   "status": "local-review-candidate",
-  "source_revision": "17902679141a4dabb025e6431697f9eff0ec7018",
+  "source_revision": "dd7d3d3e060e8dd3f2d408a1b05b1cbc33db42ce",
   "installation": {
     "editable_install": "passed",
     "extras": [
@@ -10,7 +10,7 @@
       "train",
       "charts"
     ],
-    "dependency_acquisition": "Existing exact pinned dependencies reused in a separate virtual environment after package-index DNS failed. Fresh network installation remains unverified."
+    "dependency_acquisition": "Pinned dependencies were already present in the isolated .venv; editable reinstall succeeded. Fresh dependency download was not exercised."
   },
   "checks": {
     "pytest_passed": 62,
@@ -23,7 +23,7 @@
     "source_git_blob_hashes": "All 60 copied/adapted input hashes and Git blob IDs match their individually recorded immutable source revisions.",
     "snapshot_inventory_and_relative_links": "passed",
     "chart_regeneration": "Original three chart artifacts retain their source hashes. Extended SVG/PNG retain verified source-staging hashes; the local verifier independently recomputed all six SVG polylines. PNG rasterization was checked at source staging with CairoSVG 2.9.0.",
-    "review_artifact_links": "Latest 388-update adapter package commits are explicitly labeled and distinct from historical 194-update links. Three poster attributes match immutable research source 88cc6c9eb07429d988ebacd086f19cf854380310; video source commits are unchanged. Private remote adapter download verification was performed in the research packaging workflow, not rerun by the curated snapshot checks."
+    "review_artifact_links": "Latest 388-update adapter package commits remain distinct from historical 194-update links. Three branded videos, their posters, and the media receipt use immutable private Hub commit e5c7947303118e0e76e122306175d806dfc2dad1 and match source card commit 37507ca9e795a293953565aaf94a0aefaef005be. Hub card revision is 9a9de18a9bc7ae839bf693e9c399b37737af6254. A read-only Hub API lookup returned 404 without private access in this environment, so asset availability was not independently verified."
   },
   "limits": [
     "Runtime source files are byte-identical to their recorded source revision; the authored GPU smoke does not estimate model quality.",

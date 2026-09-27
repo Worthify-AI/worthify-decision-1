@@ -25,7 +25,7 @@ Gemma 4 12B; it is a full-weight checkpoint, not a merged task adapter.
 | Fresh LoRA on each base, BANKING77 · 388 updates | **93.21%** on Decision-1 versus **93.54%** on original Gemma; −0.32 percentage points on 3,080 transformed 16-option test rows. |
 | Fresh LoRA on each base, CTU-13 | **0.115** versus **0.432** macro-F1; the Decision-1 base regressed in this one sealed scenario. |
 
-These are results for the **private, single-seed full-weight preview**, with
+These are results for the **single-seed full-weight preview**, with
 validation-selected checkpoint step 3,200. The planned second full-weight seed has not
 run; this is not a final two-seed model release. The adapter comparisons use that
 preview as the tuned base. No general LoRA advantage or faster convergence is claimed.
@@ -81,8 +81,8 @@ The extension used 1,540 training rows, 365 validation rows, four epochs and
 388 updates. Each run's checkpoint and each base's seed were selected on
 validation before fresh-process parity checks and sealed-test scoring.
 
-The **latest 388-update study's selected adapters** are available for private
-review: [Decision-1 base, update 325](https://huggingface.co/Worthify/worthify-decision-1-banking77-lora-preview/tree/271f72502162b3b408b26dd826a6ca441937bbbb) and
+The **latest 388-update study's selected adapters** are pinned here:
+[Decision-1 base, update 325](https://huggingface.co/Worthify/worthify-decision-1-banking77-lora-preview/tree/271f72502162b3b408b26dd826a6ca441937bbbb) and
 [original-Gemma base, update 350](https://huggingface.co/Worthify/gemma4-banking77-raw-control-lora-preview/tree/ad60b65b644b11a54428445b2f96c3b672ae5d20).
 Both are seed-42 packages pinned to immutable commits, with base revisions and
 numeric policies recorded. The earlier-study packages are listed separately below.
@@ -110,7 +110,7 @@ the cause was not isolated. The new plot is not a resumed or spliced old curve.
 
 The [earlier BANKING77 report](results/worthify/foundation-banking77-transfer-lora-20260926-v1/report.json)
 and [earlier paired-outcomes chart](docs/assets/decision-1/matched-lora-outcomes.png)
-remain available. The private
+remain available. The
 [Decision-1 LoRA](https://huggingface.co/Worthify/worthify-decision-1-banking77-lora-preview/tree/b1ca7e69b5441904cb7c8e34cb6f8823c2d82c42)
 and [original-Gemma control](https://huggingface.co/Worthify/gemma4-banking77-raw-control-lora-preview/tree/28c650466e81a2539f0f59b2ac541cbce7bd4736)
 are the **earlier 194-update study's selected artifacts**, not the extended
@@ -162,7 +162,7 @@ can be recomputed from the exact text-free held-out prediction rows for
 
 The [pinned Worthify source and training recipe](docs/PUBLIC_TASK_LORA.md)
 shows the expected JSONL rows, a fresh adapter run, reload verification, and
-evaluation on a separate test file. That repository is private during review.
+evaluation on a separate test file.
 Compare your adapter with one trained on the pinned original Gemma base under
 the same task rows and training budget.
 
@@ -174,8 +174,9 @@ python -m venv .venv && .venv/bin/python -m pip install -e '.[train]'
 
 ## Try one decision
 
-The current private preview requires an authorized Worthify Hub login and one
-visible CUDA GPU. From the checkout above, create `decisions.jsonl`:
+The checkpoint may require an authorized Hugging Face login, depending on its
+repository permissions. Scoring needs one visible CUDA GPU. From the checkout
+above, create `decisions.jsonl`:
 
 ```json
 {"id":"route-1","state":{"claim":"Harbor gateway H-2 received release 5.4.2 before the noon audit.","records":[{"source":"gateway installation log","text":"H-2 installed release 5.4.2 successfully.","time":"10:42"},{"source":"asset inventory","text":"Harbor gateway is H-2; installed release 5.4.2.","time":"11:11"}]},"question":"Which evidence route is warranted by the supplied records?","options":[{"id":"supported","description":"The supplied records support the precise claim."},{"id":"contradicted","description":"The supplied records conflict with the precise claim."},{"id":"insufficient","description":"The supplied records do not settle the precise claim."}]}
@@ -214,8 +215,7 @@ convert their state to text. Native cache paths remain disabled after
 equivalence failures. Batch grouping changed logits in diagnostics, so the
 main held-out table is a batch-four result rather than a universal
 single-request guarantee. The second full-weight seed, five-task adapter
-series, final public model revision, and public media verification remain
-open release gates.
+series, and broader public media verification remain open follow-up work.
 
 The Gemma-derived weights carry Apache-2.0 terms with applicable attribution.
 Worthify's source additions to MIT-licensed [OpenJev](https://github.com/bonsai/openjev/tree/53e3028363509f8533d90fe82d983770da1f6c02)

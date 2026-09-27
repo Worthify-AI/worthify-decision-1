@@ -18,7 +18,7 @@ budget and seed-matched initial LoRA tensors. Rank-16 q/k/v/o adapters use NF4
 base weights, BF16 computation and an FP32 final-softcap option loss. Each arm
 selected its checkpoint and seed on validation before scoring test.
 
-The latest four-epoch study's private, validation-selected packages are
+The latest four-epoch study's validation-selected packages are
 [Decision-1, seed 42 at update 325](https://huggingface.co/Worthify/worthify-decision-1-banking77-lora-preview/tree/271f72502162b3b408b26dd826a6ca441937bbbb) and
 [original Gemma, seed 42 at update 350](https://huggingface.co/Worthify/gemma4-banking77-raw-control-lora-preview/tree/ad60b65b644b11a54428445b2f96c3b672ae5d20).
 The links pin immutable package commits. Historical 194-update artifacts remain
@@ -54,7 +54,7 @@ retained alongside the BANKING77 gain. Different task metrics are not averaged.
 The immutable detailed protocols are included in the pinned model evidence:
 [BANKING77](https://huggingface.co/Worthify/Decision-1/blob/48acdb76db1d73e0f481b1e2079e7289db0621cc/evidence/banking77-protocol.md)
 and [CTU-13](https://huggingface.co/Worthify/Decision-1/blob/48acdb76db1d73e0f481b1e2079e7289db0621cc/evidence/ctu13-protocol.md).
-They require reviewer access while the model remains private.
+Access depends on the model repository's permissions.
 
 ## Full-weight comparison
 

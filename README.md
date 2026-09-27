@@ -4,9 +4,9 @@ Train a task LoRA for a decision your application already makes. Give the model 
 text state, a question and 2–16 described options. It returns option IDs and
 conditional scores; your software decides what happens next.
 
-**Private review preview:** Decision-1 is a single-seed, full-weight continuation
-of Gemma 4 12B. The weights and comparison adapters require authorized Hugging
-Face access. Public release is pending. [Model card](MODEL_CARD.md) ·
+**Single-seed preview:** Decision-1 is a full-weight continuation of Gemma 4 12B.
+The weights and comparison adapters are hosted separately on Hugging Face; access
+depends on those repositories' permissions. [Model card](MODEL_CARD.md) ·
 [Training guide](docs/PUBLIC_TASK_LORA.md) · [Evidence and method](docs/EVIDENCE.md)
 
 ## Train your first adapter

@@ -22,9 +22,8 @@ those splits. Keep test rows separate from model selection.
 {"id":"case-1","state":"The payment failed twice.","question":"Which route applies?","options":[{"id":"billing","description":"Billing support"},{"id":"general","description":"General support"}],"gold_option_id":"billing"}
 ```
 
-The current example uses Worthify's private seed-42 preview and requires an
-authorized Hub login. Replace the model ID and immutable revision with the
-selected public Decision-1 release when it becomes available.
+The example uses Worthify's seed-42 preview at an immutable revision. Hugging
+Face access depends on that model repository's permissions.
 
 ```bash
 MODEL_ID=Worthify/Decision-1

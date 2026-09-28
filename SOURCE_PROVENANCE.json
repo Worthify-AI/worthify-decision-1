@@ -25,7 +25,8 @@
     "hub_model_card": {
       "path": "README.md",
       "repo": "Worthify/Decision-1",
-      "revision": "2de1c7e6e00da338be9a4ff08018cfff8ee80bb3"
+      "revision": "6cd1a093fa1abb4ef547f5ae69c8e4fd27c70438",
+      "sha256": "e3e435d96c712b46b4f63655aea2257a6b3bc783592cc9583378e21f88eb4261"
     },
     "latest_banking77_original_adapter": {
       "repo": "Worthify/gemma4-banking77-control-lora",
@@ -548,7 +549,7 @@
     "MODEL_CARD.md": "e3e435d96c712b46b4f63655aea2257a6b3bc783592cc9583378e21f88eb4261",
     "README.md": "5ab8282d8d8e52491c8f3f99fe45fd600501b1dc0ba047f0bbff624dc369eada",
     "THIRD_PARTY_WORTHIFY.md": "ac1aebfd121f5973ae85f01c8225d68f837d9b158698459ec2160bdb2f450a20",
-    "VALIDATION.json": "7e4f883b54e433e30ac03411ab3841ecf3019c0f2cf3d38117972b367a76de91",
+    "VALIDATION.json": "b60f13d362ca79fe56ce48c075d198de343e9c48386d37da0c18cb4807dde72e",
     "benchmarks/render_banking77_before_after.py": "8d53b64699dddbc444e9995cb87920d2d49bdb6d94938c1cee519d76071078a7",
     "benchmarks/render_decision_1_charts.py": "52a955743c6c34364fe70337bcd346974fe8798e8c33686020910ecb3b3e9fb4",
     "benchmarks/verify_banking77_unadapted.py": "8bbd4e75bcd6440d66343ae9a5113398e9f2eeb0ce3939e011551e0aee361370",
@@ -624,7 +625,7 @@
     "tests/test_training.py": "28c2848e2b0223e34cabea0160335cc11dcc02df735e06250e0b5dcd11cdc125"
   },
   "source_repository": "Worthify/worthify-open-jev",
-  "source_revision": "8d43bc2b123fea37d442efb4c32f0f5c12b3a55d",
+  "source_revision": "3d22fcfd3793ca43dfc69012ea4c0a06b1f754e6",
   "source_revision_note": "Latest integrated research-source revision; each copied/adapted file records its immutable source revision and hash.",
   "upstream_repository": "https://github.com/bonsai/openjev",
   "upstream_revision": "53e3028363509f8533d90fe82d983770da1f6c02"

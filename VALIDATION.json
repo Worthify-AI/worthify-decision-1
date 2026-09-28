@@ -20,9 +20,10 @@
   "public_artifact_revisions": {
     "decision_1_banking77_adapter": "c7af362838dc72383cea4845350eadb38c713b70",
     "hugging_face_before_after_evidence": "aaf8562804cc594bb7321f56c6a810821d590ebf",
+    "hugging_face_model_card": "6cd1a093fa1abb4ef547f5ae69c8e4fd27c70438",
     "original_gemma_banking77_adapter": "d0e428cd9bb9b9ce46befc421d458dd1138fa512"
   },
   "schema": "worthify-curated-validation-v1",
   "source_revision": "8d43bc2b123fea37d442efb4c32f0f5c12b3a55d",
-  "status": "verified-public-source-release"
+  "status": "verified-public-release"
 }

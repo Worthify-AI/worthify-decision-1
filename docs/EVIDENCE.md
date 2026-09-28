@@ -6,10 +6,36 @@ contain publisher utterances, prompts, source records or model weights.
 
 | Evidence | What it establishes |
 |---|---|
+| [Adapter-free → task-LoRA rows and report](../results/worthify/foundation-banking77-unadapted-transfer-20260927-v1/) | Same 3,080 BANKING77 16-option test rows before and after the selected task LoRA on each base; paired gains and intent-bootstrap intervals. |
 | [Earlier BANKING77 rows and report](../results/worthify/foundation-banking77-transfer-lora-20260926-v1/) | Four fresh adapters; seeds 42/43 on each base; 3,080 transformed official-test rows. |
 | [Extended BANKING77 rows and report](../results/worthify/foundation-banking77-extended-lora-20260927-v1/) | Four fresh adapters; 388 updates each; the same 3,080 transformed official-test rows. |
 | [CTU-13 rows and report](../results/worthify/foundation-transfer-lora-20260926-v1/) | Four fresh adapters on one separate capture scenario, 407 dependent test rows. |
 | [Full-weight held-out predictions](../results/worthify/full-weight-seed42-heldout-20260924/) | Frozen base, earlier task LoRA and full-weight preview on the same 3,200 rows. |
+
+## Before and after task training
+
+The new baseline scored each unadapted base once with the same prompt, 16
+options, NF4/BF16 loading, FP32 final softcap and 2,048-token cap as the
+four-epoch LoRA comparison. Both unadapted bases reproduced the archived
+update-zero validation choices before official-test scoring. The test baseline
+was specified **after** the adapter outcomes were known, so it is descriptive,
+not a new sealed experiment.
+
+Decision-1 rose from **2,698/3,080 (87.60%)** without a task adapter to
+**2,871/3,080 (93.21%)** with its validation-selected seed-42 adapter:
+**+5.62 percentage points**. Original Gemma rose from **2,707 (87.89%)** to
+**2,881 (93.54%)**: **+5.65 points**. Paired 77-intent bootstrap intervals are
+**+3.21 to +8.57** and **+3.28 to +8.44 points**, respectively. Excluding 28
+lexical-overlap-flagged rows leaves **+5.67** and **+5.64 points** on 3,052
+rows. The [CPU verifier](../benchmarks/verify_banking77_unadapted.py) recomputes
+these values from the text-free paired rows and joins the LoRA predictions to
+the earlier public study.
+
+"Zero-shot" means no BANKING77 task adapter or prompt examples. The full-weight
+training included related intent-routing data. These scores are 16-option
+routing accuracy, not standard 77-way BANKING77 classification. The gains
+measure task adaptation within each base; they do not show a Decision-1
+advantage over original Gemma after adaptation.
 
 ## Matched task adapters
 
@@ -19,9 +45,9 @@ base weights, BF16 computation and an FP32 final-softcap option loss. Each arm
 selected its checkpoint and seed on validation before scoring test.
 
 The latest four-epoch study's validation-selected packages are
-[Decision-1, seed 42 at update 325](https://huggingface.co/Worthify/worthify-decision-1-banking77-lora-preview/tree/271f72502162b3b408b26dd826a6ca441937bbbb) and
-[original Gemma, seed 42 at update 350](https://huggingface.co/Worthify/gemma4-banking77-raw-control-lora-preview/tree/ad60b65b644b11a54428445b2f96c3b672ae5d20).
-The links pin immutable package commits. Historical 194-update artifacts remain
+[Decision-1, seed 42 at update 325](https://huggingface.co/Worthify/decision-1-banking77-lora) and
+[original Gemma, seed 42 at update 350](https://huggingface.co/Worthify/gemma4-banking77-control-lora).
+The public packages pin their base revisions and adapter hashes. Historical 194-update artifacts remain
 separately labeled in the [model card](../MODEL_CARD.md).
 
 BANKING77 used 1,540 training rows and 365 validation rows. The original
@@ -54,7 +80,7 @@ retained alongside the BANKING77 gain. Different task metrics are not averaged.
 The immutable detailed protocols are included in the pinned model evidence:
 [BANKING77](https://huggingface.co/Worthify/Decision-1/blob/48acdb76db1d73e0f481b1e2079e7289db0621cc/evidence/banking77-protocol.md)
 and [CTU-13](https://huggingface.co/Worthify/Decision-1/blob/48acdb76db1d73e0f481b1e2079e7289db0621cc/evidence/ctu13-protocol.md).
-Access depends on the model repository's permissions.
+The Decision-1 model and these evidence files are public.
 
 ## Full-weight comparison
 
@@ -71,8 +97,10 @@ across full-weight training seeds. The second full-weight seed is incomplete.
 
 ```bash
 python benchmarks/verify_decision_1.py
+python benchmarks/verify_banking77_unadapted.py --evidence results/worthify/foundation-banking77-unadapted-transfer-20260927-v1
 pip install -e '.[charts]'
 python benchmarks/render_decision_1_charts.py
+python benchmarks/render_banking77_before_after.py verify
 ```
 
 The CPU verifier checks evidence hashes, predictions, all task-adapter accuracy

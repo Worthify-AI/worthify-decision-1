@@ -22,8 +22,9 @@ those splits. Keep test rows separate from model selection.
 {"id":"case-1","state":"The payment failed twice.","question":"Which route applies?","options":[{"id":"billing","description":"Billing support"},{"id":"general","description":"General support"}],"gold_option_id":"billing"}
 ```
 
-The example uses Worthify's seed-42 preview at an immutable revision. Hugging
-Face access depends on that model repository's permissions.
+The example uses the public Decision-1 release at its immutable full-weight
+revision. Pin the revision so a later card or metadata update does not change
+the model you train on.
 
 ```bash
 MODEL_ID=Worthify/Decision-1

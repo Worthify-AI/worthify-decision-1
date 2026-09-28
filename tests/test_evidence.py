@@ -11,7 +11,12 @@ ROOT = Path(__file__).resolve().parents[1]
 
 
 def test_all_public_evidence_recomputes():
-    assert evidence.main(ROOT)['full_weight']['family_headlines'] == 21
+    result = evidence.main(ROOT)
+    assert result['full_weight']['family_headlines'] == 21
+    assert result['banking77_before_after']['arms'] == {
+        'raw': {'zero_shot_correct': 2707, 'lora_correct': 2881},
+        'tuned': {'zero_shot_correct': 2698, 'lora_correct': 2871},
+    }
 
 
 def test_macro_f1_includes_absent_offered_class():

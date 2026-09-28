@@ -21,14 +21,37 @@ Gemma 4 12B; it is a full-weight checkpoint, not a merged task adapter.
 
 | Current evidence | Result |
 | --- | --- |
+| BANKING77 before → after task LoRA | Decision-1 **87.60% → 93.21% (+5.62 points)**; original Gemma **87.89% → 93.54% (+5.65 points)** on the same 3,080 held-out 16-option rows. |
 | Full-weight held-out evaluation | Seed-42 preview exceeded frozen Gemma on the primary score in **7/7** evaluated families; the earlier task LoRA remained ahead on two evidence-family point estimates. |
-| Fresh LoRA on each base, BANKING77 · 388 updates | **93.21%** on Decision-1 versus **93.54%** on original Gemma; −0.32 percentage points on 3,080 transformed 16-option test rows. |
-| Fresh LoRA on each base, CTU-13 | **0.115** versus **0.432** macro-F1; the Decision-1 base regressed in this one sealed scenario. |
 
-These are results for a **public, single-seed research preview**, with
-validation-selected checkpoint step 3,200. The planned second full-weight seed has not
-run; this is not a two-seed reproducibility result. The adapter comparisons use this
-checkpoint as the tuned base. No general LoRA advantage or faster convergence is claimed.
+These are results for a **public, single-seed research preview**. Validation
+selected the full-weight checkpoint at step 3,200; the planned second
+full-weight seed has not run. The adapter comparisons use that checkpoint as
+the tuned base.
+
+## What the task LoRA added
+
+On the official BANKING77 test, we scored each base without a task adapter and
+paired those outcomes with its validation-selected seed-42 LoRA. The Decision-1
+adapter gained **173 more correct routes**; the original-Gemma adapter gained
+**174**. Both gains were measured on the same 3,080 utterances, each converted
+to a deterministic 16-option menu.
+
+![BANKING77 16-option held-out accuracy: Decision-1 87.60% without a task LoRA to 93.21% with one; original Gemma 87.89% to 93.54%](https://huggingface.co/Worthify/Decision-1/resolve/aaf8562804cc594bb7321f56c6a810821d590ebf/media/banking77-before-after-20260927-v1.png)
+
+The paired 77-intent bootstrap intervals for LoRA-minus-unadapted accuracy are
+**+3.21 to +8.57 points** on Decision-1 and **+3.28 to +8.44 points** on original
+Gemma. Excluding 28 rows flagged for lexical overlap leaves gains of **+5.67**
+and **+5.64** points, respectively. “Zero-shot” here means no BANKING77 task
+adapter or examples in the prompt; Decision-1's full-weight training included
+related intent-routing data. We scored these baselines **after** viewing the
+adapter results, so this is a descriptive, post-hoc comparison. The gains do
+not establish that Decision-1 is a stronger adapter starting point or learns
+faster. These are not standard 77-way BANKING77 scores.
+
+[Method](https://huggingface.co/Worthify/Decision-1/blob/aaf8562804cc594bb7321f56c6a810821d590ebf/evidence/banking77-unadapted-transfer/method.md) ·
+[report](https://huggingface.co/Worthify/Decision-1/blob/aaf8562804cc594bb7321f56c6a810821d590ebf/evidence/banking77-unadapted-transfer/report.json) ·
+[3,080 text-free paired rows](https://huggingface.co/Worthify/Decision-1/blob/aaf8562804cc594bb7321f56c6a810821d590ebf/evidence/banking77-unadapted-transfer/paired-rows.jsonl)
 
 ## Watch a decision change
 
@@ -64,8 +87,9 @@ binds the videos to their source traces and records the styling assets.
 
 ## Does it make a better base for your LoRA?
 
-The latest, four-epoch BANKING77 comparison **did not show an improvement**
-from using Decision-1 as the base. Validation selected seed 42 for both bases:
+The within-base gains above are separate from a comparison of the two starting
+bases. In the latest four-epoch BANKING77 study, validation selected seed 42
+for both bases:
 original Gemma at update 350 scored **93.54%** on the official test and
 Decision-1 at update 325 scored **93.21%**. The tuned-minus-original difference
 was **−0.32 percentage points**, with a descriptive 77-intent grouped bootstrap
@@ -82,8 +106,8 @@ The extension used 1,540 training rows, 365 validation rows, four epochs and
 validation before fresh-process parity checks and sealed-test scoring.
 
 The **latest 388-update study's selected adapters** are available as separate
-public packages: [Decision-1 base, update 325](https://huggingface.co/Worthify/decision-1-banking77-lora/tree/f1eb03b8f5ee86c4dce026c24d5d4e3694a06130) and
-[original-Gemma base, update 350](https://huggingface.co/Worthify/gemma4-banking77-control-lora/tree/71af5367a06a7dee52ba0adb9c8f67def27881e2).
+public packages: [Decision-1 base, update 325](https://huggingface.co/Worthify/decision-1-banking77-lora/tree/c7af362838dc72383cea4845350eadb38c713b70) and
+[original-Gemma base, update 350](https://huggingface.co/Worthify/gemma4-banking77-control-lora/tree/d0e428cd9bb9b9ce46befc421d458dd1138fa512).
 Both are seed-42 packages pinned to immutable commits, with base revisions and
 numeric policies recorded. The earlier-study packages are listed separately below.
 
@@ -127,7 +151,7 @@ offers the answer plus 15 distractors from 77 intents; these are **not standard
 The [four-epoch method](https://huggingface.co/Worthify/Decision-1/blob/813229cef8a8a72c98f9a236e3e42010857ce576/evidence/banking77-extended/method.md),
 [full report](https://huggingface.co/Worthify/Decision-1/blob/813229cef8a8a72c98f9a236e3e42010857ce576/evidence/banking77-extended/report.json),
 and [3,080 text-free paired rows](https://huggingface.co/Worthify/Decision-1/blob/813229cef8a8a72c98f9a236e3e42010857ce576/evidence/banking77-extended/paired-rows.jsonl)
-preserve both outcomes and their provenance. The [evidence guide](https://github.com/Worthify-AI/worthify-decision-1/blob/98aa8d5a141f85c0e97fc8fb45c4eafa1e4a6d39/docs/EVIDENCE.md)
+preserve both outcomes and their provenance. The [evidence guide](https://github.com/Worthify-AI/worthify-decision-1/blob/main/docs/EVIDENCE.md)
 explains how to rerun the public checks.
 
 ## What the full-weight checkpoint measured
@@ -161,7 +185,7 @@ can be recomputed from the exact text-free held-out prediction rows for
 
 ## Train a task LoRA
 
-The [pinned Worthify source and training recipe](https://github.com/Worthify-AI/worthify-decision-1/blob/98aa8d5a141f85c0e97fc8fb45c4eafa1e4a6d39/docs/PUBLIC_TASK_LORA.md)
+The [Worthify source and training recipe](https://github.com/Worthify-AI/worthify-decision-1/blob/main/docs/PUBLIC_TASK_LORA.md)
 shows the expected JSONL rows, a fresh adapter run, reload verification, and
 evaluation on a separate test file.
 Compare your adapter with one trained on the pinned original Gemma base under
@@ -170,7 +194,6 @@ the same task rows and training budget.
 ```bash
 git clone https://github.com/Worthify-AI/worthify-decision-1.git
 cd worthify-decision-1
-git checkout 98aa8d5a141f85c0e97fc8fb45c4eafa1e4a6d39
 python -m venv .venv && .venv/bin/python -m pip install -e '.[train]'
 ```
 

@@ -1,0 +1,11 @@
+{
+  "axis_max_accuracy": 1.0,
+  "axis_min_accuracy": 0.75,
+  "plot_source_sha256": "8d53b64699dddbc444e9995cb87920d2d49bdb6d94938c1cee519d76071078a7",
+  "png_sha256": "cea671efcdc0d1bf378605db47773f75b5ffbe220fcfcf5ecfc6f7dab5ac7cb2",
+  "renderer": "CairoSVG 2.9.0",
+  "report_sha256": "3c37679cdd8fe1e13823baa017a511e39e48513ce6085d764c17e799fa25732d",
+  "schema": "worthify-banking77-before-after-chart-v1",
+  "svg_sha256": "a9e48b7fa5a73eaad4d013c8fdd5e6a1a4fb874d323da97ca9658d1834ae8467",
+  "test_rows": 3080
+}

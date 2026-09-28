@@ -1,0 +1,78 @@
+{
+  "arms": {
+    "raw": {
+      "exposure_excluded_lift": 0.0563564875491481,
+      "exposure_excluded_lora_accuracy": 0.9354521625163827,
+      "exposure_excluded_lora_correct": 2855,
+      "exposure_excluded_rows": 3052,
+      "exposure_excluded_zero_shot_accuracy": 0.8790956749672346,
+      "exposure_excluded_zero_shot_correct": 2683,
+      "intent_bootstrap_95pct": {
+        "groups": 77,
+        "percentile_2_5": 0.03279220779220779,
+        "percentile_97_5": 0.08441558441558442,
+        "replicates": 10000,
+        "seed": 20260926,
+        "unit": "original intent cluster"
+      },
+      "lift": 0.05649350649350649,
+      "lora_accuracy": 0.9353896103896104,
+      "lora_correct": 2881,
+      "paired_correctness": {
+        "base_only_correct": 40,
+        "both_correct": 2667,
+        "both_wrong": 159,
+        "lora_only_correct": 214
+      },
+      "selected_lora_name": "raw-42",
+      "selected_lora_step": 350,
+      "zero_shot_accuracy": 0.8788961038961038,
+      "zero_shot_correct": 2707
+    },
+    "tuned": {
+      "exposure_excluded_lift": 0.056684141546526866,
+      "exposure_excluded_lora_accuracy": 0.9318479685452162,
+      "exposure_excluded_lora_correct": 2844,
+      "exposure_excluded_rows": 3052,
+      "exposure_excluded_zero_shot_accuracy": 0.8751638269986893,
+      "exposure_excluded_zero_shot_correct": 2671,
+      "intent_bootstrap_95pct": {
+        "groups": 77,
+        "percentile_2_5": 0.03214285714285714,
+        "percentile_97_5": 0.08571428571428572,
+        "replicates": 10000,
+        "seed": 20260926,
+        "unit": "original intent cluster"
+      },
+      "lift": 0.05616883116883117,
+      "lora_accuracy": 0.9321428571428572,
+      "lora_correct": 2871,
+      "paired_correctness": {
+        "base_only_correct": 41,
+        "both_correct": 2657,
+        "both_wrong": 168,
+        "lora_only_correct": 214
+      },
+      "selected_lora_name": "tuned-42",
+      "selected_lora_step": 325,
+      "zero_shot_accuracy": 0.875974025974026,
+      "zero_shot_correct": 2698
+    }
+  },
+  "evaluation_status": "post-hoc descriptive; prior adapter test outcomes already observed",
+  "evidence_package": "results/worthify/foundation-banking77-unadapted-transfer-20260927-v1",
+  "paired_rows_sha256": "b0040439aa2ea5c379e0a60faa3d66c369a74db696989a0f9bca6ca3770bb014",
+  "report_sha256": "3c37679cdd8fe1e13823baa017a511e39e48513ce6085d764c17e799fa25732d",
+  "schema": "openjev-banking77-unadapted-transfer-v1-aggregate",
+  "scope": "post-hoc descriptive unadapted base to validation-selected task LoRA on official BANKING77 16-option test",
+  "source_hashes": {
+    "data_manifest_sha256": "b9e434686de8ad0670bb3ca5223df78cee39af9697d09e1b068ed3ae114f714b",
+    "prior_paired_rows_sha256": "88c71f6ff9f3d998a53b5d9c9d24cc8a1aff927530437b7d52d2e085321fdc1a",
+    "prior_report_sha256": "3a636551d84ad308ac07eb1366e9b76a4b746b7e14de60e2cb02b5ba34dd596c",
+    "protocol_sha256": "f6dc76bb894212a26e97825ad95b865413d7bbd1b669b781d9b6eaaed4dd2bf5",
+    "scorer_sha256": "896ee95c38ae8becdde50fac2c25210798f48b94d894ce403a9fb6ad8ac899e8",
+    "selector_sha256": "bd0d8abc79bc15c9be7e4fd8a1a0a07b458fe7d1a2d57e71c643928b4af602c5",
+    "test_sha256": "c8ad8834a98d817198459404f874a71b9ec8848b94217448fc3a045380fe1686"
+  },
+  "test_rows": 3080
+}

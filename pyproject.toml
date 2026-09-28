@@ -28,7 +28,7 @@ worthify-lora = "openjev_phase1.task_lora:main"
 test = ["pytest==8.4.2", "peft==0.21.0"]
 data = ["pyarrow==25.0.1"]
 train = ["peft==0.21.0", "bitsandbytes==0.50.2"]
-charts = ["matplotlib==3.10.0"]
+charts = ["matplotlib==3.10.0", "CairoSVG==2.9.0"]
 
 [tool.setuptools.packages.find]
 where = ["src"]

@@ -5,8 +5,9 @@ text state, a question and 2–16 described options. It returns option IDs and
 conditional scores; your software decides what happens next.
 
 **Single-seed preview:** Decision-1 is a full-weight continuation of Gemma 4 12B.
-The weights and comparison adapters are hosted separately on Hugging Face; access
-depends on those repositories' permissions. [Model card](MODEL_CARD.md) ·
+The [weights](https://huggingface.co/Worthify/Decision-1) and
+[comparison adapters](https://huggingface.co/Worthify/decision-1-banking77-lora)
+are public on Hugging Face. [Model card](MODEL_CARD.md) ·
 [Training guide](docs/PUBLIC_TASK_LORA.md) · [Evidence and method](docs/EVIDENCE.md)
 
 ## Train your first adapter
@@ -55,10 +56,30 @@ Use new output paths for every run. Select using validation, then evaluate test
 once. `worthify-lora score` accepts the same decision schema without gold labels.
 [The guide](docs/PUBLIC_TASK_LORA.md) covers pinning, outputs and reload checks.
 
-## Does the tuned base help?
+## What a task LoRA adds
 
-The longer BANKING77 run did not sustain the gain seen in the initial study.
-These are validation-selected adapters with two adapter seeds per base:
+On the same 3,080 official BANKING77 test utterances, converted into
+deterministic 16-option menus, each base improved after task adaptation:
+
+| Starting model | Zero-shot, no task LoRA | Selected task LoRA | Gain |
+| --- | ---: | ---: | ---: |
+| Decision-1 | 87.60% (2,698/3,080) | **93.21%** (2,871/3,080) | **+5.62 points** |
+| Original Gemma | 87.89% (2,707/3,080) | **93.54%** (2,881/3,080) | **+5.65 points** |
+
+![BANKING77 16-option test accuracy before and after task LoRA training on both bases](docs/assets/decision-1/banking77-before-after-20260927-v1.png)
+
+The paired 77-intent bootstrap intervals for these gains are +3.21 to +8.57
+points on Decision-1 and +3.28 to +8.44 on original Gemma. "Zero-shot" here
+means no BANKING77 task adapter or examples in the prompt. We scored these
+baselines after viewing the adapter outcomes; full-weight Decision-1 training
+included related intent-routing data, and 28 test rows had flagged lexical
+overlap. These are descriptive within-base gains. [Inspect the method, report,
+and text-free paired rows](docs/EVIDENCE.md).
+
+## Does Decision-1 beat original Gemma after LoRA training?
+
+The within-base gains above are separate from the matched starting-base
+comparison. These are validation-selected adapters with two seeds per base:
 
 | Study | LoRA on original Gemma | LoRA on Decision-1 |
 |---|---:|---:|
@@ -67,9 +88,9 @@ These are validation-selected adapters with two adapter seeds per base:
 | CTU-13, one held-out flow scenario · macro-F1 | **0.432** | 0.115 |
 
 Review the **latest 388-update study adapters**:
-[LoRA on Decision-1](https://huggingface.co/Worthify/worthify-decision-1-banking77-lora-preview/tree/271f72502162b3b408b26dd826a6ca441937bbbb) ·
-[original-Gemma control](https://huggingface.co/Worthify/gemma4-banking77-raw-control-lora-preview/tree/ad60b65b644b11a54428445b2f96c3b672ae5d20).
-These pinned comparison packages require authorized Hugging Face access.
+[LoRA on Decision-1](https://huggingface.co/Worthify/decision-1-banking77-lora) ·
+[original-Gemma control](https://huggingface.co/Worthify/gemma4-banking77-control-lora).
+These public packages pin their base revisions and adapter weight hashes.
 
 ![BANKING77 validation through 388 updates: two adapter seeds per base and their means](docs/assets/decision-1/banking77-validation-0-388-20260927-v1.png)
 

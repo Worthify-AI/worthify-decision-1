@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="660" viewBox="0 0 1200 660" role="img" aria-labelledby="title desc">
+<title id="title">BANKING77 accuracy before and after a task LoRA</title>
+<desc id="desc">Both original Gemma and Decision-1 improve from their adapter-free scores after task LoRA training on the same 3,080 held-out 16-option BANKING77 rows. The axis begins at 75 percent and ends at 100 percent. Original Gemma retains the higher final LoRA score.</desc>
+<metadata>schema=worthify-banking77-before-after-chart-v1; report_sha256=3c37679cdd8fe1e13823baa017a511e39e48513ce6085d764c17e799fa25732d</metadata>
+<rect width="1200" height="660" fill="#101b2a"/>
+<text x="72" y="58" fill="#f5ad82" font-family="Arial,Helvetica,sans-serif" font-size="19" font-weight="700" letter-spacing="3">WORTHIFY / DECISION-1</text>
+<text x="72" y="119" fill="#f7f8fa" font-family="Arial,Helvetica,sans-serif" font-size="43" font-weight="700">What the task LoRA added</text>
+<text x="72" y="155" fill="#c9d4e3" font-family="Arial,Helvetica,sans-serif" font-size="20">BANKING77 · 3,080 official-test utterances · 16 offered choices</text>
+<circle cx="292" cy="205" r="8" fill="#101b2a" stroke="#e1e8f0" stroke-width="3"/>
+<text x="309" y="212" fill="#c9d4e3" font-family="Arial,Helvetica,sans-serif" font-size="17">Without task LoRA</text>
+<circle cx="505" cy="205" r="8" fill="#f5ad82"/>
+<text x="522" y="212" fill="#c9d4e3" font-family="Arial,Helvetica,sans-serif" font-size="17">Validation-selected task LoRA</text>
+<line x1="292.0" y1="254" x2="292.0" y2="516" stroke="#3a4a60" stroke-width="1"/>
+<text x="292.0" y="246" text-anchor="middle" fill="#aebdd0" font-family="Arial,Helvetica,sans-serif" font-size="15">75%</text>
+<line x1="425.6" y1="254" x2="425.6" y2="516" stroke="#3a4a60" stroke-width="1"/>
+<text x="425.6" y="246" text-anchor="middle" fill="#aebdd0" font-family="Arial,Helvetica,sans-serif" font-size="15">80%</text>
+<line x1="559.2" y1="254" x2="559.2" y2="516" stroke="#3a4a60" stroke-width="1"/>
+<text x="559.2" y="246" text-anchor="middle" fill="#aebdd0" font-family="Arial,Helvetica,sans-serif" font-size="15">85%</text>
+<line x1="692.8" y1="254" x2="692.8" y2="516" stroke="#3a4a60" stroke-width="1"/>
+<text x="692.8" y="246" text-anchor="middle" fill="#aebdd0" font-family="Arial,Helvetica,sans-serif" font-size="15">90%</text>
+<line x1="826.4" y1="254" x2="826.4" y2="516" stroke="#3a4a60" stroke-width="1"/>
+<text x="826.4" y="246" text-anchor="middle" fill="#aebdd0" font-family="Arial,Helvetica,sans-serif" font-size="15">95%</text>
+<line x1="960.0" y1="254" x2="960.0" y2="516" stroke="#3a4a60" stroke-width="1"/>
+<text x="960.0" y="246" text-anchor="middle" fill="#aebdd0" font-family="Arial,Helvetica,sans-serif" font-size="15">100%</text>
+<line x1="72" y1="418" x2="1128" y2="418" stroke="#3a4a60" stroke-width="1"/>
+<text x="72" y="330" fill="#f7f8fa" font-family="Arial,Helvetica,sans-serif" font-size="25" font-weight="700">Decision-1</text>
+<text x="72" y="359" fill="#aebdd0" font-family="Arial,Helvetica,sans-serif" font-size="16">Same test rows</text>
+<line x1="628.6" y1="335" x2="778.7" y2="335" stroke="#f5ad82" stroke-width="8" stroke-linecap="round"/>
+<circle cx="628.6" cy="335" r="11" fill="#101b2a" stroke="#e1e8f0" stroke-width="4"/>
+<circle cx="778.7" cy="335" r="12" fill="#f5ad82"/>
+<text x="628.6" y="313" text-anchor="middle" fill="#dce5ee" font-family="Arial,Helvetica,sans-serif" font-size="18" font-weight="700">87.60%</text>
+<text x="778.7" y="374" text-anchor="middle" fill="#f5ad82" font-family="Arial,Helvetica,sans-serif" font-size="19" font-weight="700">93.21%</text>
+<text x="1014" y="340" fill="#f5ad82" font-family="Arial,Helvetica,sans-serif" font-size="28" font-weight="700">+5.62 pp</text>
+<text x="72" y="470" fill="#f7f8fa" font-family="Arial,Helvetica,sans-serif" font-size="25" font-weight="700">Original Gemma</text>
+<text x="72" y="499" fill="#aebdd0" font-family="Arial,Helvetica,sans-serif" font-size="16">Same test rows</text>
+<line x1="636.4" y1="475" x2="787.4" y2="475" stroke="#8fc5e8" stroke-width="8" stroke-linecap="round"/>
+<circle cx="636.4" cy="475" r="11" fill="#101b2a" stroke="#e1e8f0" stroke-width="4"/>
+<circle cx="787.4" cy="475" r="12" fill="#8fc5e8"/>
+<text x="636.4" y="453" text-anchor="middle" fill="#dce5ee" font-family="Arial,Helvetica,sans-serif" font-size="18" font-weight="700">87.89%</text>
+<text x="787.4" y="514" text-anchor="middle" fill="#8fc5e8" font-family="Arial,Helvetica,sans-serif" font-size="19" font-weight="700">93.54%</text>
+<text x="1014" y="480" fill="#8fc5e8" font-family="Arial,Helvetica,sans-serif" font-size="28" font-weight="700">+5.65 pp</text>
+<text x="72" y="559" fill="#c9d4e3" font-family="Arial,Helvetica,sans-serif" font-size="17">16-option test accuracy; horizontal axis begins at 75%.</text>
+<text x="72" y="595" fill="#aebdd0" font-family="Arial,Helvetica,sans-serif" font-size="16">Adapter-free scores were measured post-hoc. Within-base gains do not establish a stronger starting base.</text>
+<text x="72" y="624" fill="#aebdd0" font-family="Arial,Helvetica,sans-serif" font-size="16">In the 388-update study, selected Gemma and Decision-1 LoRAs scored 93.54% and 93.21%.</text>
+</svg>

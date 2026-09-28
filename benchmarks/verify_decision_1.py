@@ -291,10 +291,15 @@ def verify_full_weight(root):
 
 
 def main(root=ROOT):
+    from benchmarks.verify_banking77_unadapted import verify as verify_unadapted
+
     checksums(root/'results/raw')
     result = {'status':'ok',
         'banking77':verify_transfer(root,'foundation-banking77-transfer-lora-20260926-v1',True),
         'banking77_extended':verify_extended(root),
+        'banking77_before_after':verify_unadapted(
+            root/'results/worthify/foundation-banking77-unadapted-transfer-20260927-v1',
+            root/'results/worthify/foundation-banking77-extended-lora-20260927-v1'),
         'ctu13':verify_transfer(root,'foundation-transfer-lora-20260926-v1',False),
         'full_weight':verify_full_weight(root)}
     print(json.dumps(result,sort_keys=True))

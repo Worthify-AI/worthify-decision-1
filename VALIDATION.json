@@ -1,7 +1,7 @@
 {
   "checks": {
     "before_after_chart": "SVG/PNG byte-verified against report and SHA-bound chart manifest; 1,200\u00d7660 image inspected at full size",
-    "decision_1_verifier": "full-weight 21 family headlines; earlier and extended two-seed BANKING77; CTU-13; zero-shot-to-LoRA correct counts, paired outcomes, 77-intent bootstrap and 3,052-row sensitivity recomputed from text-free rows",
+    "decision_1_verifier": "direct script invocation passed: full-weight 21 family headlines; earlier and extended BANKING77; CTU-13; before/after task-LoRA rows and intervals",
     "installation": "isolated virtualenv editable install with pip install --no-deps --no-build-isolation -e '.[test]' using the pinned, preinstalled dependency environment; public pytest passed",
     "public_pytest": "62 passed; two upstream SWIG deprecation warnings",
     "raw_sha256sums": "passed in both source and curated repository",
@@ -9,7 +9,7 @@
     "snapshot_inventory": "passed: 82 curated files, 69 source-lineage records, relative links checked",
     "upstream_published_verifier": "69 claims passed"
   },
-  "date": "2026-09-27",
+  "date": "2026-09-28",
   "limits": [
     "One full-weight Decision-1 seed; the second full-weight seed is unfinished.",
     "Adapter-free BANKING77 baselines were scored after the LoRA outcomes were observed; gains are descriptive and task-specific.",
@@ -20,10 +20,10 @@
   "public_artifact_revisions": {
     "decision_1_banking77_adapter": "c7af362838dc72383cea4845350eadb38c713b70",
     "hugging_face_before_after_evidence": "aaf8562804cc594bb7321f56c6a810821d590ebf",
-    "hugging_face_model_card": "6cd1a093fa1abb4ef547f5ae69c8e4fd27c70438",
+    "hugging_face_model_card": "cb54dcd238da782a21035bb39a1b057d743af832",
     "original_gemma_banking77_adapter": "d0e428cd9bb9b9ce46befc421d458dd1138fa512"
   },
   "schema": "worthify-curated-validation-v1",
-  "source_revision": "8d43bc2b123fea37d442efb4c32f0f5c12b3a55d",
+  "source_revision": "08da1d0f385a437d6f7bf64ef37558225ef95997",
   "status": "verified-public-release"
 }

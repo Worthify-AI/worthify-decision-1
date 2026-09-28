@@ -25,8 +25,8 @@
     "hub_model_card": {
       "path": "README.md",
       "repo": "Worthify/Decision-1",
-      "revision": "6cd1a093fa1abb4ef547f5ae69c8e4fd27c70438",
-      "sha256": "e3e435d96c712b46b4f63655aea2257a6b3bc783592cc9583378e21f88eb4261"
+      "revision": "cb54dcd238da782a21035bb39a1b057d743af832",
+      "sha256": "2c0ac8909e3057fe4cd9a7cbd4df4b27726f91a3ebeb9eca87a36f9a39938674"
     },
     "latest_banking77_original_adapter": {
       "repo": "Worthify/gemma4-banking77-control-lora",
@@ -54,10 +54,10 @@
     },
     "MODEL_CARD.md": {
       "relationship": "unchanged",
-      "source_git_blob": "74e3a49999b75edcdcf18e6827c5eaf1cad172f6",
+      "source_git_blob": "d915cf69c29630e7e56060e6feaa6a679b8e8dbd",
       "source_path": "docs/model-card-v2-hf-review.md",
-      "source_revision": "8d43bc2b123fea37d442efb4c32f0f5c12b3a55d",
-      "source_sha256": "e3e435d96c712b46b4f63655aea2257a6b3bc783592cc9583378e21f88eb4261"
+      "source_revision": "08da1d0f385a437d6f7bf64ef37558225ef95997",
+      "source_sha256": "2c0ac8909e3057fe4cd9a7cbd4df4b27726f91a3ebeb9eca87a36f9a39938674"
     },
     "THIRD_PARTY_WORTHIFY.md": {
       "relationship": "adapted for curated distribution",
@@ -546,14 +546,14 @@
     "AGENTS.md": "16c0341ee6c02751a1533224ab13b66194a24836b60ce1b0b0a65fd9d90cb12c",
     "LICENSE": "f765f2140f8507a8f0d81ec0fd2c4bd72fe6a066841ef27883ff876a76bf61be",
     "LICENSES/Apache-2.0.txt": "0d3ae2fb460d5ffb9ae6f63a25c7cc8bf5d41eb3b79c3685873435e37ec0b659",
-    "MODEL_CARD.md": "e3e435d96c712b46b4f63655aea2257a6b3bc783592cc9583378e21f88eb4261",
-    "README.md": "5ab8282d8d8e52491c8f3f99fe45fd600501b1dc0ba047f0bbff624dc369eada",
+    "MODEL_CARD.md": "2c0ac8909e3057fe4cd9a7cbd4df4b27726f91a3ebeb9eca87a36f9a39938674",
+    "README.md": "df5e3cc3de2792e9076ddfd1eb7f4fd5295e07f7d540dc623613323707de710f",
     "THIRD_PARTY_WORTHIFY.md": "ac1aebfd121f5973ae85f01c8225d68f837d9b158698459ec2160bdb2f450a20",
-    "VALIDATION.json": "b60f13d362ca79fe56ce48c075d198de343e9c48386d37da0c18cb4807dde72e",
+    "VALIDATION.json": "bb5e154f430cd2720e8ce43eeccd1aadb349942a6cbaff76ff4b5ef49e4b0cce",
     "benchmarks/render_banking77_before_after.py": "8d53b64699dddbc444e9995cb87920d2d49bdb6d94938c1cee519d76071078a7",
     "benchmarks/render_decision_1_charts.py": "52a955743c6c34364fe70337bcd346974fe8798e8c33686020910ecb3b3e9fb4",
     "benchmarks/verify_banking77_unadapted.py": "8bbd4e75bcd6440d66343ae9a5113398e9f2eeb0ce3939e011551e0aee361370",
-    "benchmarks/verify_decision_1.py": "6cc8ae7c87d4057a2793e759f832ee3f0854f3ed1c68f1b7c65b26e28a2a6f1b",
+    "benchmarks/verify_decision_1.py": "42aab92c88c0e52dc96b5c10dbccda0447a8910ad382d4127d9d3576748c870e",
     "benchmarks/verify_published.py": "b6d9681235db3468e929ee4f19cc2631fe0476140e5704bdf38b48498075f6d9",
     "docs/EVIDENCE.md": "bb3f53c821e9262404c22655116d2f6b3548e6ffe3576670c03505a9603145aa",
     "docs/FOUNDATION_BANKING77_EXTENDED_LORA.md": "2adab7c2f2e638aec8f618b5376a65af905324f9ea7abbd2d124b51ce96075d7",
@@ -625,7 +625,7 @@
     "tests/test_training.py": "28c2848e2b0223e34cabea0160335cc11dcc02df735e06250e0b5dcd11cdc125"
   },
   "source_repository": "Worthify/worthify-open-jev",
-  "source_revision": "3d22fcfd3793ca43dfc69012ea4c0a06b1f754e6",
+  "source_revision": "08da1d0f385a437d6f7bf64ef37558225ef95997",
   "source_revision_note": "Latest integrated research-source revision; each copied/adapted file records its immutable source revision and hash.",
   "upstream_repository": "https://github.com/bonsai/openjev",
   "upstream_revision": "53e3028363509f8533d90fe82d983770da1f6c02"

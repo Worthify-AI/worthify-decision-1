@@ -291,7 +291,10 @@ def verify_full_weight(root):
 
 
 def main(root=ROOT):
-    from benchmarks.verify_banking77_unadapted import verify as verify_unadapted
+    if __package__:
+        from .verify_banking77_unadapted import verify as verify_unadapted
+    else:
+        from verify_banking77_unadapted import verify as verify_unadapted
 
     checksums(root/'results/raw')
     result = {'status':'ok',
